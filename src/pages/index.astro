@@ -1,0 +1,18 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Navbar from "@components/navbar"
+import Header from "@components/Header";
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<Navbar client:visible />
+		<Header client:visible />
+	</main>
+</Layout>
+
+<style>
+	:root {
+		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+</style>
