@@ -1,8 +1,10 @@
 import { content } from "@content/index";
 import Typical from "react-typical";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import lazyload from "react-lazy-load-image-component";
+const { LazyLoadImage } = lazyload
 import "react-lazy-load-image-component/src/effects/blur.css";
 
+console.log(LazyLoadImage)
 export default function Header() {
   return (
     <div className=" min-h-screen grid place-items-center">
