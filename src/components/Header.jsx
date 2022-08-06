@@ -1,6 +1,8 @@
 import { content } from "@content/index";
 import Typical from "react-typical";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import lazyload from "react-lazy-load-image-component";
+const { LazyLoadImage } = lazyload
+
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Header() {
@@ -10,6 +12,7 @@ export default function Header() {
         <div className="w-full md:w-2/4 sm:w-2/4 lg:w-2/5">
             <LazyLoadImage
               src={content.header.img}
+              placeholderSrc={content.header.placeholder}
               effect="blur"
               alt="Luis Rincon"
             />
