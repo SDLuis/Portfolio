@@ -37,7 +37,7 @@ export default function Header() {
           <h1
             className={`${
               animated ? "" : "translate-y-5 opacity-0"
-            }  transform transition duration-2000 ease-in-out font-bold text-2xl text-gray-500`}
+            }  transform transition duration-2000 ease-in-out font-bold text-2xl text-blue-600`}
           >
             {content.header.text[2]}{" "}
             <Typical
@@ -49,7 +49,7 @@ export default function Header() {
           <button
             className={`${
               animated ? "" : "translate-y-10 opacity-0"
-            }  transform transition duration-2000 ease-in-out animate-float bg-blue-800 py-3 px-10 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
+            }  transform transition duration-2000 ease-in-out bg-blue-800 py-3 px-10 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
           >
             {content.header.btnText}
           </button>
