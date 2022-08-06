@@ -4,6 +4,10 @@ module.exports = {
   plugins: [],
   theme: {
     extend: {
+      transitionDuration: {
+        2000: "2000ms",
+      },
+      },
       dropShadow: {
         "4xl": [
           "0px 0px 20px rgba(255, 221, 31, 0.75)",
@@ -12,6 +16,7 @@ module.exports = {
       },
       animation: {
         "moving-background": "moving-background 5s ease-in-out",
+        "float": "float 3s infinite"
       },
       keyframes: {
         "moving-background": {
@@ -27,6 +32,19 @@ module.exports = {
             opacity: 0,
           },
         },
+        float: {
+          "0%": {
+            transform: "translateY(0px)",
+            animationTimingFunction: "ease-in-out",
+          },
+          "50%": {
+            transform: "translateY(-20px)",
+            animationTimingFunction: "ease-in-out",
+          },
+          "100%": {
+            transform: "translateY(0px)",
+            animationTimingFunction: "ease-in-out",
+          },
       },
       colors: {
         portfolio: {

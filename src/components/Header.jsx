@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+("react");
 import { content } from "@content/index";
 import Typical from "react-typical";
 import lazyload from "react-lazy-load-image-component";
@@ -6,31 +8,36 @@ const { LazyLoadImage } = lazyload
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Header() {
+  const [animated, setAnimated] = useState(false);
+  useEffect(() => {
+    setAnimated(true);
+  }, []);
+
   return (
     <div className=" min-h-screen grid place-items-center">
       <div className=" w-7/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
         <div className="w-full md:w-2/4 sm:w-2/4 lg:w-2/5">
-            <LazyLoadImage
-              src={content.header.img}
-              placeholderSrc={content.header.placeholder}
-              effect="blur"
-              alt="Luis Rincon"
-            />
+          <LazyLoadImage
+            src={content.header.img}
+            placeholderSrc={content.header.placeholder}
+            effect="blur"
+            alt="Luis Rincon"
+          />
         </div>
-        <div className="grid place-items-center">
+        <div className="text-white font-dosis text-center md:text-left">
           <h2
-            className={
-              "mt-4 sm:mt-0 text-2xl md:text-5xl font-bold text-white"
-            }
+            className={`${
+              animated ? "" : "translate-y-5 opacity-0"
+            }  transform transition duration-2000 ease-in-out text-3xl md:text-5xl font-bold`}
           >
             {content.header.text[0]}
             <br />
             {content.header.text[1]}
           </h2>
           <h1
-            className={
-              "mt-2 font-bold text-xl sm:text-2xl md:text-3xl text-gray-400"
-            }
+            className={`${
+              animated ? "" : "translate-y-5 opacity-0"
+            }  transform transition duration-2000 ease-in-out font-bold text-2xl text-gray-500`}
           >
             {content.header.text[2]}{" "}
             <Typical
@@ -39,7 +46,11 @@ export default function Header() {
               className="inline-block"
             />
           </h1>
-          <button className="bg-blue-800 py-3 px-10 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600">
+          <button
+            className={`${
+              animated ? "" : "translate-y-10 opacity-0"
+            }  transform transition duration-2000 ease-in-out animate-float bg-blue-800 py-3 px-10 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
+          >
             {content.header.btnText}
           </button>
         </div>
@@ -47,5 +58,3 @@ export default function Header() {
     </div>
   );
 }
-
-
