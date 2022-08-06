@@ -1,5 +1,5 @@
-import SDL from "../img/SDL.png";
-import Me from "../img/Me2.png";
+import SDL from "../img/SDL2.png";
+import Me from "../img/someone.svg"
 
 export const content = {
   nav: {

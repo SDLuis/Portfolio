@@ -2,17 +2,20 @@
 import Layout from "@layouts/Layout.astro";
 import Navbar from "@components/navbar"
 import Header from "@components/Header";
+import Tecnologies from "@components/Tecnologies.astro";
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<Navbar client:visible />
+<Layout title="Portfolio | Luis Rincon.">
+	<section class="relative w-full overflow-hidden" >
+		<Navbar />
 		<Header client:visible />
-	</main>
+		<Tecnologies />
+	</section>
+	<section class=" hidden relative w-full overflow-hidden bg-gradient-to-r from-portfolio-dark-200 via-portfolio-dark-200 to-portfolio-red-200" id="hero" style="clip-path: polygon(25% 0%, 100% 0, 100% 95%, 0 100%, 0 100%, 0 0)">
+		<Tecnologies />
+	</section>
 </Layout>
 
 <style>
-	:root {
-		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
+	:root {}
 </style>

@@ -1,23 +1,18 @@
 import { content } from "@content/index";
 import Typical from "react-typical";
-import lazyload from "react-lazy-load-image-component";
-const { LazyLoadImage } = lazyload
+import { LazyLoadImage, trackWindowScroll } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-console.log(LazyLoadImage)
-export default function Header() {
+function Header() {
   return (
     <div className=" min-h-screen grid place-items-center">
       <div className=" w-7/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
         <div className="w-full md:w-2/4 sm:w-2/4 lg:w-2/5">
-          <picture className="inline-block bg-red-800">
             <LazyLoadImage
-              className="mix-blend-multiply grayscale"
               src={content.header.img}
               effect="blur"
               alt="Luis Rincon"
             />
-          </picture>
         </div>
         <div className="grid place-items-center">
           <h2
@@ -41,7 +36,7 @@ export default function Header() {
               className="inline-block"
             />
           </h1>
-          <button className="bg-red-800 py-3 px-10 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-red-600">
+          <button className="bg-blue-800 py-3 px-10 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600">
             {content.header.btnText}
           </button>
         </div>
@@ -49,3 +44,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default trackWindowScroll(Header)
