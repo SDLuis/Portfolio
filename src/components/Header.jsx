@@ -2,8 +2,7 @@ import { useState, useEffect } from "react";
 import { content } from "@content/index";
 import Typical from "react-typical";
 import { Link as ScrollLink } from 'react-scroll';
-import lazyload from "react-lazy-load-image-component";
-const { LazyLoadImage } = lazyload
+//import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Header() {
@@ -16,10 +15,8 @@ export default function Header() {
     <div className=" min-h-screen grid place-items-center -mt-24">
       <div className=" w-7/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
         <div className="w-full md:w-2/4 sm:w-2/4 lg:w-2/5">
-          <LazyLoadImage
+          <img
             src={content.header.img}
-            placeholderSrc={content.header.placeholder}
-            effect="blur"
             alt="Luis Rincon"
           />
         </div>
