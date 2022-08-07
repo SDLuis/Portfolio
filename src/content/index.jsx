@@ -14,7 +14,7 @@ import Astro from "@components/logos/astro.astro"
 import Tailwind from "@components/logos/tailwind.astro"
 import CSS from "@components/logos/css.astro"
 
-const content = {
+export const content = {
   nav: {
     logo: SDL,
     links: [
@@ -88,4 +88,4 @@ const content = {
   },
 };
 
-export default content;
+

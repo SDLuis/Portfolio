@@ -1,4 +1,4 @@
-import content from "@content/index";
+import { content } from "@content/index";
 import { IconMenu } from "@icons/menu";
 
 export default function Navbar() {
