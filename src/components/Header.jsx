@@ -3,7 +3,7 @@ import { content } from "@content/index";
 import Typical from "react-typical";
 import { Link as ScrollLink } from 'react-scroll';
 import lazyload from "react-lazy-load-image-component";
-const { LazyLoadImage } = lazyload;
+const { LazyLoadImage } = lazyload
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 export default function Header() {

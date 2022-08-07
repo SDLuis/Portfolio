@@ -40,15 +40,15 @@ export const content = {
     title: "Stack",
     techs: [
       {
-        tech: "javascript",
+        tech: "JavaScript",
         Icon: JavaScript,
       },
       {
-        tech: "typescript",
+        tech: "TypeScript",
         Icon: TypeScript,
       },
       {
-        tech: "node",
+        tech: "Node",
         Icon: Node,
       },
       {
@@ -56,31 +56,31 @@ export const content = {
         Icon: Sequelize,
       },
       {
-        tech: "github",
+        tech: "GitHub",
         Icon: GitHub,
       },
       {
-        tech: "vscode",
+        tech: "VSCode",
         Icon: VSCode,
       },
       {
-        tech: "react",
+        tech: "React",
         Icon: React,
       },
       {
-        tech: "",
+        tech: "Astro",
         Icon: Astro,
       },
       {
-        tech: "html5",
+        tech: "Html5",
         Icon: Html5,
       },
       {
-        tech: "tailwind",
+        tech: "Tailwind",
         Icon: Tailwind,
       },
       {
-        tech: "css",
+        tech: "CSS",
         Icon: CSS,
       },
     ],

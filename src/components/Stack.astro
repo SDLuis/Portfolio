@@ -25,9 +25,9 @@ const techs = content.stack.techs;
 				{techs.map(({ Icon, tech }, index) => {
 				return (
 				<button class={`${ index % 2 ===0? ' animate-float'
-					: ' animate-refloat' } grid place-items-center w-20 `}>
+					: ' animate-refloat' } grid place-items-center w-20 inset-0 bg-cover bg-center `}>
 					<Icon />
-					<span class="uppercase text-lg text-black font-bold">{tech}</span>
+					<span class="opacity-0 hover:opacity-100 hover:-mt-7 duration-300 absolute inset-0 z-10 flex justify-center items-start text-xl text-black font-semibold">{tech}</span>
 				</button>
 				);
 				})}
