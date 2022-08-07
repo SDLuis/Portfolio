@@ -22,18 +22,14 @@ export default function Header() {
         </div>
         <div className="text-white font-dosis text-center md:text-left">
           <h2
-            className={`${
-              animated ? "" : "translate-y-5 opacity-0"
-            }  transform transition duration-2000 ease-in-out text-2xl md:text-5xl font-bold text-blue-300`}
+            className={`text-2xl md:text-5xl font-bold text-blue-300`}
           >
             {content.header.text[0]}
             <br />
              {content.header.text[1]}
           </h2>
           <h1
-            className={`${
-              animated ? "" : "translate-y-5 opacity-0"
-            }  transform transition duration-2000 ease-in-out font-bold text-xl sm:text-2xl`}
+            className={`font-bold text-xl sm:text-2xl`}
           >
             {content.header.text[2]}{" "}
             <Typical
@@ -44,9 +40,7 @@ export default function Header() {
           </h1>
           <ScrollLink to="tecnologies">
           <button
-            className={`${
-              animated ? "" : "translate-y-10 opacity-0"
-            }  transform transition duration-2000 ease-in-out bg-blue-800 py-3 px-9 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
+            className={`bg-blue-800 py-3 px-9 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
           >
             {content.header.btnText}
           </button>
