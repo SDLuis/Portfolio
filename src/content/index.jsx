@@ -1,8 +1,20 @@
 import SDL from "../img/SDL2.png";
-import Me from "../img/someone.svg"
-import placeholder from "../img/placeholder.png"
+import Me from "../img/someone.svg";
+import placeholder from "../img/placeholder.png";
 
-export const content = {
+import GitHub from "@components/logos/githib.astro";
+import Html5 from "@components/logos/html5.astro";
+import JavaScript from "@components/logos/javascript.astro";
+import Node from "@components/logos/node.astro";
+import React from "@components/logos/react.astro";
+import TypeScript from "@components/logos/typescript.astro";
+import VSCode from "@components/logos/VSCode.astro";
+import Sequelize from "@components/logos/sequelize.astro";
+import Astro from "@components/logos/astro.astro"
+import Tailwind from "@components/logos/tailwind.astro"
+import CSS from "@components/logos/css.astro"
+
+const content = {
   nav: {
     logo: SDL,
     links: [
@@ -26,24 +38,54 @@ export const content = {
   },
   stack: {
     title: "Stack",
-    /*tech: [
+    techs: [
       {
-        img: process.env.PUBLIC_URL + '/assets/mongo.png',
-        alt: 'mongodb',
+        tech: "javascript",
+        Icon: JavaScript,
       },
       {
-        img: process.env.PUBLIC_URL + '/logo512.png',
-        alt: 'react',
+        tech: "typescript",
+        Icon: TypeScript,
       },
       {
-        img: process.env.PUBLIC_URL + '/assets/express.png',
-        alt: 'express',
+        tech: "node",
+        Icon: Node,
       },
       {
-        img: process.env.PUBLIC_URL + '/assets/node.png',
-        alt: 'node',
+        tech: "Sequelize",
+        Icon: Sequelize,
       },
-    ],*/
+      {
+        tech: "github",
+        Icon: GitHub,
+      },
+      {
+        tech: "vscode",
+        Icon: VSCode,
+      },
+      {
+        tech: "react",
+        Icon: React,
+      },
+      {
+        tech: "",
+        Icon: Astro,
+      },
+      {
+        tech: "html5",
+        Icon: Html5,
+      },
+      {
+        tech: "tailwind",
+        Icon: Tailwind,
+      },
+      {
+        tech: "css",
+        Icon: CSS,
+      },
+    ],
     desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only`,
   },
 };
+
+export default content;

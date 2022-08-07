@@ -4,6 +4,9 @@ module.exports = {
   plugins: [],
   theme: {
     extend: {
+      backgroundColor:{
+        stacks: '#DFF6FF'
+      },
       transitionDuration: {
         2000: "2000ms",
       },
@@ -16,7 +19,8 @@ module.exports = {
       },
       animation: {
         "moving-background": "moving-background 5s ease-in-out",
-        "float": "float 3s infinite"
+        "float": "float 3s infinite",
+        "refloat": "refloat 3s infinite"
       },
       keyframes: {
         "moving-background": {
@@ -44,13 +48,28 @@ module.exports = {
           "100%": {
             transform: "translateY(0px)",
             animationTimingFunction: "ease-in-out",
-          },
+          }
+      },
+      refloat: {
+        "0%": {
+          transform: "translateY(-20px)",
+          animationTimingFunction: "ease-in-out",
+        },
+        "50%": {
+          transform: "translateY(0px)",
+          animationTimingFunction: "ease-in-out",
+        },
+        "100%": {
+          transform: "translateY(-20px)",
+          animationTimingFunction: "ease-in-out",
+        }
       },
       colors: {
         portfolio: {
           dark: {
             100: "#414141",
             200: "#000000",
+            300: "#19282F"
           },
           red: {
             100: "#3D0000",

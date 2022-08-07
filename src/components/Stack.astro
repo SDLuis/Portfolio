@@ -1,0 +1,39 @@
+---
+import content from "../content/index";
+import { LazyLoadComponent } from 'react-lazy-load-image-component';
+const techs = content.stack.techs;
+---
+
+<section>
+	<div
+		class='flex flex-col items-center lg:items-start justify-center px-10 mx-auto lg:space-y-20 lg:flex-row max-w-7xl min-h-screen' id="tecnologies">
+		<div
+			class='flex flex-col flex-shrink-0 w-full h-full max-w-lg space-y-5 text-gray-800 lg:pr-4 lg:max-w-none lg:w-5/12 xl:w-6/12'>
+			<span id='tecnologias' class='block tracking-widest text-gray-400 uppercase pt-28 text-xl'>#tecnologias
+			</span>
+
+			<h2 class='text-4xl font-black xl:text-5xl text-justify'>
+				Algunas <span class='text-transparent bg-clip-text bg-blue-800'>tecnologias
+				</span> que conozco y utilizo en la actualidad.
+			</h2>
+			<p class='text-xl text-gray-500 mt-4'>
+				{content.stack.desc}
+			</p>
+		</div>
+
+		<div
+			class=' max-w-3xl pt-10 lg:max-w-none lg:w-7/12 lg:pl-8 xl:w-6/12 grid items-center md:grid md:justify-center'>
+			<div class='grid grid-cols-3 mb-10 lg:mb-0 text-gray-400 gap-x-12 gap-y-16 [&>a]:transition-opacity'>
+				{techs.map(({ Icon, tech }, index) => {
+				return (
+				<button class={`${ index===1 || index===4 || index===7 || index===10? ' animate-float'
+					: ' animate-refloat' } w-20 grid place-items-center `}>
+					<Icon />
+					<span class="uppercase text-lg text-black font-bold">{tech}</span>
+				</button>
+				);
+				})}
+			</div>
+		</div>
+	</div>
+</section>
