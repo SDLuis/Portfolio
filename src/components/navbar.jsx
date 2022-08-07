@@ -17,22 +17,17 @@ export default function Navbar() {
       <nav className="absolute top-0 left-0 right-0 z-40 hidden min-h-screen py-24 bg-white peer-checked:block lg:block lg:static lg:bg-inherit lg:py-0 lg:min-h-0 bg-opacity-40 backdrop-blur-lg lg:backdrop-blur-0">
         <ul className="flex flex-col items-center lg:items-start lg:flex-row font-semibold tracking-tight text-xl gap-x-8 text-white [&>li>a]:border-b-2 [&>li>a]:border-b-transparent [&>li>a]:transition-all gap-y-4">
           <li className="flex-1">
-            <a href='/#tecnologies' className="hover:border-b-white hover:text-blue-600">
+            <a href='/' className="hover:border-b-white hover:text-blue-600">
               Inicio
             </a>
           </li>
           <li className="relative flex lg:flex-col">
             <a
-              className="relative opacity-50 pointer-events-none hover:border-b-black hover:text-red"
-              href="/"
+              className="relative hover:border-b-black hover:text-red"
+              href="/#tecnologies"
             >
               About me
             </a>
-            <div className="pl-2">
-              <span className="bg-blue-600 text-white text-base font-semibold px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300">
-                ¡Working!
-              </span>
-            </div>
           </li>
           <li className="relative flex lg:flex-col">
             <a
