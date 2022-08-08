@@ -8,17 +8,12 @@ import Stack from "@components/Stack.astro";
 
 <Layout title="Portfolio | Luis Rincon.">
 	<section class="relative w-full overflow-hidden">
-		<Navbar client:visible />
+		<Navbar />
 		<Header client:visible />
 		<Tecnologies />
 	</section>
 	<section class="bg-white">
 		<Stack />
-	</section>
-	<section
-		class=" hidden relative w-full overflow-hidden bg-gradient-to-r from-portfolio-dark-200 via-portfolio-dark-200 to-portfolio-red-200"
-		id="hero" style="clip-path: polygon(25% 0%, 100% 0, 100% 95%, 0 100%, 0 100%, 0 0)">
-		<Tecnologies />
 	</section>
 </Layout>
 
