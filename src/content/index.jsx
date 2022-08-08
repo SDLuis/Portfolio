@@ -2,18 +2,6 @@ import SDL from "../img/SDL2.png";
 import Me from "../img/someone.svg";
 import placeholder from "../img/placeholder.png";
 
-import GitHub from "@components/logos/githib.astro";
-import Html5 from "@components/logos/html5.astro";
-import JavaScript from "@components/logos/javascript.astro";
-import Node from "@components/logos/node.astro";
-import React from "@components/logos/react.astro";
-import TypeScript from "@components/logos/typescript.astro";
-import VSCode from "@components/logos/VSCode.astro";
-import Sequelize from "@components/logos/sequelize.astro";
-import Astro from "@components/logos/astro.astro"
-import Tailwind from "@components/logos/tailwind.astro"
-import CSS from "@components/logos/css.astro"
-
 export const content = {
   nav: {
     logo: SDL,
@@ -38,52 +26,6 @@ export const content = {
   },
   stack: {
     title: "Stack",
-    techs: [
-      {
-        tech: "JavaScript",
-        Icon: JavaScript,
-      },
-      {
-        tech: "TypeScript",
-        Icon: TypeScript,
-      },
-      {
-        tech: "Node",
-        Icon: Node,
-      },
-      {
-        tech: "Sequelize",
-        Icon: Sequelize,
-      },
-      {
-        tech: "GitHub",
-        Icon: GitHub,
-      },
-      {
-        tech: "VSCode",
-        Icon: VSCode,
-      },
-      {
-        tech: "React",
-        Icon: React,
-      },
-      {
-        tech: "Astro",
-        Icon: Astro,
-      },
-      {
-        tech: "Html5",
-        Icon: Html5,
-      },
-      {
-        tech: "Tailwind",
-        Icon: Tailwind,
-      },
-      {
-        tech: "CSS",
-        Icon: CSS,
-      },
-    ],
     desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only`,
   },
 };
