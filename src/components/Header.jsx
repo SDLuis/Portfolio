@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { content } from "@content/index";
 import Typical from "react-typical";
-import { Link as ScrollLink } from 'react-scroll';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 //const { LazyLoadImage } = lazyload
 import "react-lazy-load-image-component/src/effects/blur.css";
@@ -45,15 +44,14 @@ export default function Header() {
               className="inline-block"
             />
           </h1>
-          <ScrollLink to="tecnologies">
           <button
+            onClick={() => document.getElementById('tecnologies').scrollIntoView()}
             className={`${
               animated ? "" : "translate-y-10 opacity-0"
             }  transform transition duration-2000 ease-in-out bg-blue-800 py-3 px-9 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
           >
             {content.header.btnText}
           </button>
-          </ScrollLink>
         </div>
       </div>
     </div>

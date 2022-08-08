@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <header className="flex p-6 justify-between w-full lg:w-10/12">
       <a href="/" className="hidden md:block">
-        <img className="max-h-10" src={content.nav.logo} alt="" />
+        <img className="max-h-8" src={content.nav.logo} alt="" />
       </a>
       <input type="checkbox" id="menu" hidden className="peer" />
       <label
