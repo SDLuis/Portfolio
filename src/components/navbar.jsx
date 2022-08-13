@@ -4,7 +4,7 @@ import { Link as ScrollLink } from 'react-scroll';
 
 export default function Navbar() {
   return (
-    <header className="flex p-6 justify-between w-full fixed z-10 bg-darkblue">
+    <header className="flex p-6 justify-between w-full lg:fixed lg:z-10 bg-darkblue">
       <a href="/" className="hidden md:block">
         <img className="max-h-8" src={content.nav.logo} alt="" />
       </a>

@@ -13,7 +13,7 @@ export default function Header() {
   }, []);
 
   return (
-    <div className=" min-h-screen grid place-items-center -mb-px">
+    <div className=" min-h-screen grid place-items-center -mb-px -mt-20 lg:-mt-0">
       <div className=" w-7/12 md:w-9/12 xl:w-8/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="text-white font-dosis text-center md:text-left lg:mr-10 mt-5 md:mt-0 lg:-mt-12">
           <h2
