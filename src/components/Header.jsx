@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { content } from "@content/index";
 import Typical from "react-typical";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { Link as ScrollLink } from "react-scroll";
 //const { LazyLoadImage } = lazyload
 import "react-lazy-load-image-component/src/effects/blur.css";
 
@@ -12,17 +13,9 @@ export default function Header() {
   }, []);
 
   return (
-    <div className=" min-h-screen grid place-items-center -mt-24">
-      <div className=" w-7/12 mx-auto flex flex-col md:flex-row-reverse items-center justify-between">
-        <div className="w-full md:w-2/4 sm:w-2/4 lg:w-2/5">
-          <LazyLoadImage
-            src={content.header.img}
-            placeholderSrc={content.header.placeholder}
-            effect="blur"
-            alt="Luis Rincon"
-          />
-        </div>
-        <div className="text-white font-dosis text-center md:text-left">
+    <div className=" min-h-screen grid place-items-center -mb-px">
+      <div className=" w-7/12 md:w-9/12 xl:w-8/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+        <div className="text-white font-dosis text-center md:text-left lg:mr-10 mt-5 md:mt-0 lg:-mt-12">
           <h2
             className={`${
               animated ? "" : "translate-y-5 opacity-0"
@@ -30,7 +23,7 @@ export default function Header() {
           >
             {content.header.text[0]}
             <br />
-             {content.header.text[1]}
+            {content.header.text[1]}
           </h2>
           <h1
             className={`${
@@ -41,17 +34,52 @@ export default function Header() {
             <Typical
               steps={content.header.typical}
               loop={Infinity}
-              className="inline-block"
+              className="inline-block mt-3"
             />
           </h1>
-          <button
-            onClick={() => document.getElementById('tecnologies').scrollIntoView()}
-            className={`${
-              animated ? "" : "translate-y-10 opacity-0"
-            }  transform transition duration-2000 ease-in-out bg-blue-800 py-3 px-9 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
-          >
-            {content.header.btnText}
-          </button>
+          <div className="lg:hidden block">
+            <ScrollLink to="tecnologies" smooth={true} spy={true}>
+              <button
+                className={`${
+                  animated ? "" : "translate-y-10 opacity-0"
+                }  transform transition duration-2000 ease-in-out animate-float mt-10 rounded-lg text-white`}
+              >
+                {content.header.btnText}
+              </button>
+            </ScrollLink>
+          </div>
+        </div>
+        <div className="w-full md:w-2/4 sm:w-2/4 lg:w-2/5 lg:-mt-4">
+          <picture className="inline-block bg-blue-900">
+            <LazyLoadImage
+              className="mix-blend-multiply grayscale"
+              placeholderSrc={content.header.placeholder}
+              src={content.header.img}
+              effect="blur"
+              alt="Luis Rincon"
+            />
+          </picture>
+        </div>
+
+        <div
+          className={`${
+            animated ? "" : "translate-y-5 opacity-0"
+          }  transform transition duration-2000 ease-in-out ml-10 mt-5 lg:mt-30 text-left hidden lg:block`}
+        >
+          <p className="text-white uppercase font-bold">Introduction</p>
+          <h1 className="text-2xl md:text-3xl text-blue-300 font-bold">
+            FULL STACK WEB DEVELOPER
+          </h1>
+          <p className="max-w-lg text-gray-400">{content.stack.desc}</p>
+          <ScrollLink to="tecnologies" smooth={true} spy={true}>
+            <button
+              className={`${
+                animated ? "" : "translate-y-10 opacity-0"
+              }  transform transition duration-2000 ease-in-out animate-float mt-10 rounded-lg text-white uppercase`}
+            >
+              {content.header.btnText}
+            </button>
+          </ScrollLink>
         </div>
       </div>
     </div>

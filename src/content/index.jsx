@@ -1,6 +1,6 @@
 import SDL from "../img/SDL2.png";
-import Me from "../img/someone.svg";
-import placeholder from "../img/placeholder.png";
+import Me from "../img/Me2.png";
+import placeholder from "../img/Me2.png";
 
 export const content = {
   nav: {

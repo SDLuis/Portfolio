@@ -5,7 +5,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundColor:{
-        stacks: '#DFF6FF'
+        stacks: '#DFF6FF',
+        darkblue: '#002B5B',
       },
       transitionDuration: {
         2000: "2000ms",

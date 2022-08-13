@@ -1,9 +1,10 @@
 import { content } from "@content/index";
 import { IconMenu } from "@icons/menu";
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Navbar() {
   return (
-    <header className="flex p-6 justify-between w-full lg:w-10/12">
+    <header className="flex p-6 justify-between w-full fixed z-10 bg-darkblue">
       <a href="/" className="hidden md:block">
         <img className="max-h-8" src={content.nav.logo} alt="" />
       </a>
@@ -22,12 +23,11 @@ export default function Navbar() {
             </a>
           </li>
           <li className="relative flex lg:flex-col">
-            <a
-              className="relative hover:border-b-black hover:text-red"
-              href="/#tecnologies"
-            >
+          <ScrollLink to="tecnologies" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
+            <button>
               About me
-            </a>
+              </button>
+          </ScrollLink>
           </li>
           <li className="relative flex lg:flex-col">
             <a
@@ -36,11 +36,6 @@ export default function Navbar() {
             >
               Projects
             </a>
-            <div className="pl-2">
-              <span className="bg-blue-600 text-white text-base font-semibold px-2.5 py-0.5 rounded">
-                ¡Working!
-              </span>
-            </div>
           </li>
         </ul>
       </nav>
