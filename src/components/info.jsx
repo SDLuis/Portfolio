@@ -17,13 +17,13 @@ function Info() {
       id="aboutMe"
     >
       <div className="w-7/12 md:w-9/12 xl:w-9/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
-        <figure className="md:flex bg-blue-100 rounded-xl dark:bg-slate-800">
+        <figure className="md:flex bg-blue-100 rounded-xl dark:bg-blue-900">
           <LazyLoadImage
             className="w-2/4 md:w-full h-auto md:rounded-xl rounded-full mx-auto"
             effect="blur"
             placeholderSrc={content.header.img2}
             src={content.header.img2}
-            alt=""
+            alt="Luis Tejeda"
           />
           <div
             className={`${
@@ -31,7 +31,7 @@ function Info() {
             }  transform transition duration-2000 ease-in-outpt-8 md:-ml-5 md:p-3 lg:p-8 xl:p-5 p-8 text-center self-center md:text-left space-y-4`}
           >
             <blockquote>
-              <p className="lg:text-lg font-medium ">
+              <p className="lg:text-lg font-medium dark:text-white ">
                 Soy observador, analista, activo, respetuoso, mantengo buena
                 comunicación con los demás, comprometido con los logros de los
                 objetivos que se establezcan.
