@@ -17,7 +17,7 @@ function Info() {
       id="aboutMe"
     >
       <div className="w-7/12 md:w-9/12 xl:w-9/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
-        <figure className="md:flex bg-blue-100 rounded-xl dark:bg-blue-900">
+        <figure className="md:flex bg-blue-100 rounded-xl dark:bg-slate-800">
           <LazyLoadImage
             className="w-2/4 md:w-full h-auto md:rounded-xl rounded-full mx-auto"
             effect="blur"
