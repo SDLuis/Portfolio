@@ -17,7 +17,7 @@ function Info() {
       id="aboutMe"
     >
       <div className="w-7/12 md:w-9/12 xl:w-9/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
-        <figure className="md:flex bg-blue-100 rounded-xl dark:bg-slate-800">
+        <figure className="md:flex bg-blue-100 rounded-xl">
           <LazyLoadImage
             className="w-2/4 md:w-full h-auto md:rounded-xl rounded-full mx-auto"
             effect="blur"
@@ -28,20 +28,20 @@ function Info() {
           <div
             className={`${
               animated ? "" : "translate-y-5 opacity-0"
-            }  transform transition duration-2000 ease-in-outpt-8 md:-ml-5 md:p-3 lg:p-8 xl:p-5 p-8 text-center self-center md:text-left space-y-4`}
+            }  transform transition duration-2000 ease-in-outpt-8 md:-ml-5 md:p-3 lg:p-8 xl:p-5 p-8 text-start self-center md:text-left space-y-4`}
           >
             <blockquote>
-              <p className="lg:text-lg font-medium dark:text-white ">
+              <p className="lg:text-lg font-medium ">
                 Soy observador, analista, activo, respetuoso, mantengo buena
                 comunicación con los demás, comprometido con los logros de los
                 objetivos que se establezcan.
               </p>
             </blockquote>
             <figcaption className="font-medium">
-              <div className=" text-sky-500 dark:text-sky-400">
+              <div className=" text-sky-500">
                 - Luis Manuel Rincon Tejeda
               </div>
-              <h4 className="text-slate-700 dark:text-slate-500">
+              <h4 className="text-slate-700">
                 - 22 años
                 <br />
                 - TDS
