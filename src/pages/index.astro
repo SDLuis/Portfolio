@@ -4,6 +4,7 @@ import Navbar from "@components/navbar"
 import Header from "@components/Header";
 import Tecnologies from "@components/Tecnologies.astro";
 import Stack from "@components/Stack.astro";
+import InfoAbout from "@components/info";
 ---
 
 <Layout title="Portfolio | Luis Rincon.">
@@ -14,6 +15,9 @@ import Stack from "@components/Stack.astro";
 	</section>
 	<section class="bg-white">
 		<Stack />
+	</section>
+	<section>
+		<InfoAbout client:visible />
 	</section>
 </Layout>
 

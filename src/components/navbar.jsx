@@ -1,8 +1,9 @@
 import { content } from "@content/index";
 import { IconMenu } from "@icons/menu";
 import { Link as ScrollLink } from 'react-scroll';
+import { trackWindowScroll } from "react-lazy-load-image-component"
 
-export default function Navbar() {
+function Navbar() {
   return (
     <header className="flex p-6 justify-between w-full lg:fixed lg:z-10 bg-darkblue">
       <a href="/" className="hidden md:block">
@@ -25,6 +26,13 @@ export default function Navbar() {
           <li className="relative flex lg:flex-col">
           <ScrollLink to="tecnologies" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
             <button>
+              Tecnologies
+              </button>
+          </ScrollLink>
+          </li>
+          <li className="relative flex lg:flex-col">
+          <ScrollLink to="aboutMe" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
+            <button>
               About me
               </button>
           </ScrollLink>
@@ -42,3 +50,5 @@ export default function Navbar() {
     </header>
   );
 }
+
+export default trackWindowScroll(Navbar)

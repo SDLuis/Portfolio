@@ -1,6 +1,7 @@
 import SDL from "../img/SDL2.png";
 import Me from "../img/Me2.png";
 import placeholder from "../img/Me2.png";
+import Me2 from "../img/Me2.jpeg"
 
 export const content = {
   nav: {
@@ -13,6 +14,7 @@ export const content = {
   header: {
     placeholder: placeholder,
     img: Me,
+    img2: Me2,
     text: ["Hi!", "It's me, Luis Rincon.", "I am "],
     typical: [
       "web developer.",

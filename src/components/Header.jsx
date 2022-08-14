@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 import { content } from "@content/index";
 import Typical from "react-typical";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { LazyLoadImage, trackWindowScroll } from "react-lazy-load-image-component";
 import { Link as ScrollLink } from "react-scroll";
 //const { LazyLoadImage } = lazyload
 import "react-lazy-load-image-component/src/effects/blur.css";
 
-export default function Header() {
+function Header() {
   const [animated, setAnimated] = useState(false);
   useEffect(() => {
     setAnimated(true);
@@ -42,14 +42,14 @@ export default function Header() {
               <button
                 className={`${
                   animated ? "" : "translate-y-10 opacity-0"
-                }  transform transition duration-2000 ease-in-out animate-float mt-10 rounded-lg text-white`}
+                }  transform transition duration-2000 ease-in-out animate-float mt-10 rounded-lg bg-blue-800 py-3 px-9 text-xl uppercase text-gray-200 hover:bg-blue-600`}
               >
                 {content.header.btnText}
               </button>
             </ScrollLink>
           </div>
         </div>
-        <div className="w-full md:w-2/4 sm:w-2/4 lg:w-2/5 lg:-mt-4">
+        <div className="w-full md:w-2/4 sm:w-2/4 lg:w-2/4 xl:w-2/5 lg:-mt-4">
           <picture className="inline-block bg-blue-900">
             <LazyLoadImage
               className="mix-blend-multiply grayscale"
@@ -75,7 +75,7 @@ export default function Header() {
             <button
               className={`${
                 animated ? "" : "translate-y-10 opacity-0"
-              }  transform transition duration-2000 ease-in-out animate-float mt-10 rounded-lg text-white uppercase`}
+              }  transform transition duration-2000 ease-in-out animate-float bg-blue-800 py-3 px-9 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
             >
               {content.header.btnText}
             </button>
@@ -85,3 +85,5 @@ export default function Header() {
     </div>
   );
 }
+
+export default trackWindowScroll(Header)
