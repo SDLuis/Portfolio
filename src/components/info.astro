@@ -12,8 +12,8 @@ import LazyLoadImage from "./LazyLoadImage"
               <div
                 class="atropos-inner transition-all duration-700 relative p-2 border-2 rounded-md shadow-2xl border-transparent bg-bluet backdrop-blur-sm flex flex-col">
                 <div class="relative mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
-                  <figure class="md:flex bg-blue-100">
-                    <LazyLoadImage data-atropos-offset="5" client:visible
+                  <figure data-atropos-offset="5" class="md:flex bg-blue-100">
+                    <LazyLoadImage client:visible
                       classStyle="w-2/4 md:w-full xl:max-w-4xl h-auto md:rounded-xl rounded-full mx-auto"
                       src={content.header.img2} placeholderSrc={content.header.img2} alt="Luis Tejeda" />
                     <div class={`transform transition duration-2000 ease-in-outpt-8 md:-ml-5 md:p-3 lg:p-8 xl:p-5 p-8
