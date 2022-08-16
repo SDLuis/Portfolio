@@ -19,14 +19,14 @@ import LazyLoadImage from "./LazyLoadImage"
                     <div class={`transform transition duration-2000 ease-in-outpt-8 md:-ml-5 md:p-3 lg:p-8 xl:p-5 p-8
                       text-start self-center md:text-left space-y-4`}>
                       <blockquote>
-                        <p class="lg:text-lg md:text-base font-medium xl:-mt-3 xl:-mb-3 md:-mb-3">
+                        <p data-atropos-offset="2" class="lg:text-lg md:text-base font-medium xl:-mt-3 xl:-mb-3 md:-mb-3">
                           Soy observador, analista, activo, respetuoso, mantengo
                           buena comunicación con los demás, comprometido con los
                           logros de los objetivos que se establezcan.
                         </p>
                       </blockquote>
                       <figcaption class="font-medium">
-                        <div class=" text-sky-500">
+                        <div data-atropos-offset="5" class=" text-sky-500">
                           - Luis Manuel Rincon Tejeda
                         </div>
                         <h4 class="text-slate-700">
@@ -195,7 +195,6 @@ import LazyLoadImage from "./LazyLoadImage"
   /* eslint-enable */
   window.Atropos({
     el: '.atropos',
-    activeOffset: 110,
-    shadowScale: 5
+    activeOffset: 110
   })
 </script>
