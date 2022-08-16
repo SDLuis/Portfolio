@@ -13,7 +13,7 @@ import LazyLoadImage from "./LazyLoadImage"
                 class="atropos-inner transition-all duration-700 relative p-2 border-2 rounded-md shadow-2xl border-transparent bg-bluet backdrop-blur-sm flex flex-col">
                 <div class="relative mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
                   <figure class="md:flex bg-blue-100">
-                    <LazyLoadImage client:visible
+                    <LazyLoadImage data-atropos-offset="5" client:visible
                       classStyle="w-2/4 md:w-full xl:max-w-4xl h-auto md:rounded-xl rounded-full mx-auto"
                       src={content.header.img2} placeholderSrc={content.header.img2} alt="Luis Tejeda" />
                     <div class={`transform transition duration-2000 ease-in-outpt-8 md:-ml-5 md:p-3 lg:p-8 xl:p-5 p-8
@@ -29,13 +29,13 @@ import LazyLoadImage from "./LazyLoadImage"
                         <div data-atropos-offset="5" class=" text-sky-500">
                           - Luis Manuel Rincon Tejeda
                         </div>
-                        <h4 class="text-slate-700">
+                        <h4 data-atropos-offset="2" class="text-slate-700">
                           - 22 años
                           <br />
                           - TDS
                           <br />- FullStack Developer (ITLA)
                         </h4>
-                        <div class="xl:block hidden">
+                        <div data-atropos-offset="2" class="xl:block hidden">
                           <p class="mt-3 mb-4 lg:mt-1 lg:mb-0 font-medium text-lg text-sky-500">
                             - Habilidades
                           </p>
