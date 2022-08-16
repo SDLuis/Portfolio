@@ -9,7 +9,7 @@ function Navbar() {
       <a href="/" className="hidden md:block">
         <img className="max-h-8" src={content.nav.logo} alt="" />
       </a>
-      <input type="checkbox" id="menu" hidden className="peer" />
+      <input type="checkbox" id="menu" hidden className="peer " />
       <label
         htmlFor="menu"
         className="relative z-50 lg:hidden peer-checked:[&>.first]:hidden peer-checked:[&>.last]:block text-blue-800"
@@ -37,7 +37,7 @@ function Navbar() {
               </button>
           </ScrollLink>
           </li>
-          <li className="relative flex lg:flex-col">
+          <li className="relative flex lg:flex-col lg:mr-52">
             <a
               className="hover:border-b-red hover:text-red opacity-50 pointer-events-none"
               href="/"

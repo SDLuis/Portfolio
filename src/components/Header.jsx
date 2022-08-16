@@ -13,9 +13,9 @@ function Header() {
   }, []);
 
   return (
-    <div className=" min-h-screen grid place-items-center -mb-px -mt-20 lg:-mt-0">
-      <div className=" w-7/12 md:w-9/12 xl:w-8/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
-        <div className="text-white font-dosis text-center md:text-left lg:mr-10 mt-5 md:mt-0 lg:-mt-12">
+    <div className=" min-h-screen grid place-items-center -mt-20 lg:-mt-0">
+      <div className=" w-8/12 md:w-9/12 xl:w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+        <div className="text-white font-dosis text-center md:text-left lg:mr-10 mt-5 md:mt-0 lg:-mt-20">
           <h2
             className={`${
               animated ? "" : "translate-y-5 opacity-0"
@@ -49,10 +49,10 @@ function Header() {
             </ScrollLink>
           </div>
         </div>
-        <div className="w-full md:w-2/4 sm:w-2/4 lg:w-2/4 xl:w-2/5 lg:-mt-4">
-          <picture className="inline-block bg-blue-900">
+        <div className="w-11/12 md:w-2/4 sm:w-2/4 lg:w-2/4 xl:w-1/5">
+          <picture /*className="inline-block bg-blue-900"*/>
             <LazyLoadImage
-              className="mix-blend-multiply grayscale"
+              /*className="mix-blend-multiply grayscale"*/
               placeholderSrc={content.header.placeholder}
               src={content.header.img}
               effect="blur"
@@ -64,7 +64,7 @@ function Header() {
         <div
           className={`${
             animated ? "" : "translate-y-5 opacity-0"
-          }  transform transition duration-2000 ease-in-out ml-10 mt-5 lg:mt-30 text-left hidden lg:block`}
+          }  transform transition duration-2000 ease-in-out ml-10 mt-5 lg:mt-0 text-left hidden lg:block`}
         >
           <p className="text-white uppercase font-bold">Introduction</p>
           <h1 className="text-2xl md:text-3xl text-blue-300 font-bold">

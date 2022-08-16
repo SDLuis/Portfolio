@@ -1,7 +1,7 @@
 import SDL from "../img/SDL2.png";
-import Me from "../img/Me2.png";
-import placeholder from "../img/Me2.png";
-import Me2 from "../img/Me2.jpeg"
+import Me from "../img/someone.svg" /*"../img/Me2.png";*/
+import placeholder from "../img/placeholder.png" /*"../img/Me2.png";*/
+import Me2 from  "src/img/Me2.jpeg"
 
 export const content = {
   nav: {

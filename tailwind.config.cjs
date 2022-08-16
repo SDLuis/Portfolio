@@ -7,6 +7,8 @@ module.exports = {
       backgroundColor:{
         stacks: '#DFF6FF',
         darkblue: '#002B5B',
+        bluet: "rgb(51 169 220 / 22%)",
+        bluett: "rgb(219 234 254 / 50%)"
       },
       transitionDuration: {
         2000: "2000ms",
