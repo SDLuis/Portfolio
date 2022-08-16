@@ -3,82 +3,82 @@ import { content } from "@content/index";
 import LazyLoadImage from "./LazyLoadImage"
 ---
 
-  <div id="aboutMe" class="grid place-content-center min-h-screen">
-    <div class="grid xl:grid-cols-1 max-w-xs md:max-w-xl lg:max-w-3xl xl:max-w-5xl gap-4">
-      <div class="flex flex-col items-center justify-center">
-        <div class="atropos">
-          <div class="atropos-scale">
-            <div class="atropos-rotate">
-              <div
-                class="atropos-inner transition-all duration-700 relative p-2 border-2 rounded-md shadow-2xl border-transparent bg-bluet backdrop-blur-sm flex flex-col">
-                <div class="relative mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
-                  <figure data-atropos-offset="5" class="md:flex bg-blue-100">
-                    <LazyLoadImage client:visible
-                      classStyle="w-2/4 md:w-full xl:max-w-4xl h-auto md:rounded-xl rounded-full mx-auto"
-                      src={content.header.img2} placeholderSrc={content.header.img2} alt="Luis Tejeda" />
-                    <div class={`transform transition duration-2000 ease-in-outpt-8 md:-ml-5 md:p-3 lg:p-8 xl:p-5 p-8
-                      text-start self-center md:text-left space-y-4`}>
-                      <blockquote>
-                        <p data-atropos-offset="2" class="lg:text-lg md:text-base font-medium xl:-mt-3 xl:-mb-3 md:-mb-3">
-                          Soy observador, analista, activo, respetuoso, mantengo
-                          buena comunicación con los demás, comprometido con los
-                          logros de los objetivos que se establezcan.
+<div id="aboutMe" class="grid place-content-center min-h-screen">
+  <div class="grid xl:grid-cols-1 max-w-xs md:max-w-xl lg:max-w-3xl xl:max-w-5xl gap-4">
+    <div class="flex flex-col items-center justify-center">
+      <div class="atropos">
+        <div class="atropos-scale">
+          <div class="atropos-rotate">
+            <div
+              class="atropos-inner transition-all duration-700 relative p-2 border-2 rounded-md shadow-2xl border-transparent bg-bluet backdrop-blur-sm flex flex-col">
+              <div class="relative mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
+                <figure data-atropos-offset="2" class="md:flex bg-blue-100">
+                  <LazyLoadImage client:visible data-atropos-offset="5"
+                    classStyle="w-2/4 md:w-full xl:max-w-4xl h-auto md:rounded-xl rounded-full mx-auto"
+                    src={content.header.img2} placeholderSrc={content.header.img2} alt="Luis Tejeda" />
+                  <div class={`transform transition duration-2000 ease-in-outpt-8 md:-ml-5 md:p-3 lg:p-8 xl:p-5 p-8
+                    text-start self-center md:text-left space-y-4`}>
+                    <blockquote>
+                      <p data-atropos-offset="2" class="lg:text-lg md:text-base font-medium xl:-mt-3 xl:-mb-3 md:-mb-3">
+                        Soy observador, analista, activo, respetuoso, mantengo
+                        buena comunicación con los demás, comprometido con los
+                        logros de los objetivos que se establezcan.
+                      </p>
+                    </blockquote>
+                    <figcaption class="font-medium">
+                      <div data-atropos-offset="5" class=" text-sky-500">
+                        - Luis Manuel Rincon Tejeda
+                      </div>
+                      <h4 data-atropos-offset="2" class="text-slate-700">
+                        - 22 años
+                        <br />
+                        - TDS
+                        <br />- FullStack Developer (ITLA)
+                      </h4>
+                      <div data-atropos-offset="2" class="xl:block hidden">
+                        <p class="mt-3 mb-4 lg:mt-1 lg:mb-0 font-medium text-lg text-sky-500">
+                          - Habilidades
                         </p>
-                      </blockquote>
-                      <figcaption class="font-medium">
-                        <div data-atropos-offset="5" class=" text-sky-500">
-                          - Luis Manuel Rincon Tejeda
+                        <div class="grid grid-cols-4">
+                          <h4>
+                            JavaScript
+                            <br />
+                            TypeScript
+                            <br />
+                            C#
+                          </h4>
+                          <h4>
+                            Node js
+                            <br />
+                            Express
+                            <br />
+                            React js
+                            <br />
+                            Sequelize
+                          </h4>
+                          <h4>
+                            SQL
+                            <br />
+                            MySQL
+                            <br />
+                            Oracle
+                          </h4>
+                          <h4>
+                            Git -Github
+                            <br />
+                            Metodología scrum
+                            <br />
+                            Confluence
+                            <br />
+                            ClickUp
+                          </h4>
                         </div>
-                        <h4 data-atropos-offset="2" class="text-slate-700">
-                          - 22 años
-                          <br />
-                          - TDS
-                          <br />- FullStack Developer (ITLA)
-                        </h4>
-                        <div data-atropos-offset="2" class="xl:block hidden">
-                          <p class="mt-3 mb-4 lg:mt-1 lg:mb-0 font-medium text-lg text-sky-500">
-                            - Habilidades
-                          </p>
-                          <div class="grid grid-cols-4">
-                            <h4>
-                              JavaScript
-                              <br />
-                              TypeScript
-                              <br />
-                              C#
-                            </h4>
-                            <h4>
-                              Node js
-                              <br />
-                              Express
-                              <br />
-                              React js
-                              <br />
-                              Sequelize
-                            </h4>
-                            <h4>
-                              SQL
-                              <br />
-                              MySQL
-                              <br />
-                              Oracle
-                            </h4>
-                            <h4>
-                              Git -Github
-                              <br />
-                              Metodología scrum
-                              <br />
-                              Confluence
-                              <br />
-                              ClickUp
-                            </h4>
-                          </div>
-                        </div>
-                      </figcaption>
-                    </div>
-                  </figure>
-                </div>
+                      </div>
+                    </figcaption>
+                  </div>
+                </figure>
               </div>
+            </div>
           </div>
         </div>
       </div>
