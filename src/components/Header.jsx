@@ -67,10 +67,12 @@ function Header() {
           }  transform transition duration-2000 ease-in-out ml-10 mt-5 lg:mt-0 text-left hidden lg:block`}
         >
           <p className="text-white uppercase font-bold">Introduction</p>
-          <h1 className="text-2xl md:text-2xl text-blue-300 font-bold">
+          <h1 className="text-2xl md:text-2xl text-blue-300 font-bold mb-2">
             FULL STACK WEB DEVELOPER
           </h1>
-          <p className="max-w-lg text-gray-400">{content.stack.desc}</p>
+          <p className="max-w-lg text-gray-400 mb-4">{content.nav.desc[0]}</p>
+          <p className="max-w-lg text-gray-400">{content.nav.desc[1]}</p>
+
           <ScrollLink to="tecnologies" smooth={true} spy={true}>
             <button
               className={`${

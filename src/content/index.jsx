@@ -1,10 +1,13 @@
 import SDL from "../img/SDL2.png";
-import Me from "../img/someone.svg" /*"../img/Me2.png";*/
+import Me from "../img/Me3.png" /*"../img/Me2.png";*/
 import placeholder from "../img/placeholder.png" /*"../img/Me2.png";*/
 import Me2 from  "src/img/Me2.jpeg"
 
 export const content = {
   nav: {
+    desc: [`Welcome to my portfolio, here you can learn more about me, the technologies I use, the ones I have knowledge of, the projects I have done to date, and how to contact me.`,
+    
+    `Enjoy the tour!`],
     logo: SDL,
     links: [
       { text: "Work", to: "mywork" },
