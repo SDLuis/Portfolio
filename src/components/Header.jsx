@@ -53,6 +53,7 @@ function Header() {
           <picture /*className="inline-block bg-blue-900"*/>
             <LazyLoadImage
               /*className="mix-blend-multiply grayscale"*/
+              className="rounded-full"
               placeholderSrc={content.header.placeholder}
               src={content.header.img}
               effect="blur"

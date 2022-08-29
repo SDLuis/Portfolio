@@ -1,5 +1,5 @@
 import SDL from "../img/SDL2.png";
-import Me from "../img/Me3.png" /*"../img/Me2.png";*/
+import Me from "../img/Me8.png" /*"../img/Me2.png";*/
 import placeholder from "../img/Me3.png" /*"../img/Me2.png";*/
 import Me2 from  "src/img/Me2.jpeg"
 
@@ -33,6 +33,12 @@ export const content = {
     title: "Stack",
     desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only`,
   },
+  info: {
+    age: "22 years old",
+    stack: "FullStack Developer (ITLA)",
+    achievements: "TDS",
+    aboutme: "I am an observer, analyst, active, respectful, I maintain good communication with others, committed to the achievement of the objectives that are established."
+  }
 };
 
 

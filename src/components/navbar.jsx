@@ -20,7 +20,7 @@ function Navbar() {
         <ul className="flex flex-col items-center lg:items-start lg:flex-row font-semibold tracking-tight text-xl gap-x-8 text-white [&>li>a]:border-b-2 [&>li>a]:border-b-transparent [&>li>a]:transition-all gap-y-4">
           <li className="flex-1">
             <a href='/' className="relative hover:border-b-black">
-              Inicio
+              Home
             </a>
           </li>
           <li className="relative flex lg:flex-col">
