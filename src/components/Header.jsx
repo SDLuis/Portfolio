@@ -13,7 +13,7 @@ function Header() {
   }, []);
 
   return (
-    <div className=" min-h-screen grid place-items-center -mt-20 lg:-mt-0">
+    <div className="min-h-screen grid place-items-center -mt-20 lg:-mt-0">
       <div className=" w-8/12 md:w-9/12 xl:w-11/12 mx-auto flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="text-white font-dosis text-center md:text-left lg:mr-10 mt-5 md:mt-0 lg:-mt-20">
           <h2

@@ -38,12 +38,11 @@ function Navbar() {
           </ScrollLink>
           </li>
           <li className="relative flex lg:flex-col lg:mr-52">
-            <a
-              className="hover:border-b-red hover:text-red opacity-50 pointer-events-none"
-              href="/"
-            >
+          <ScrollLink to="projects" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
+            <button>
               Projects
-            </a>
+              </button>
+          </ScrollLink>
           </li>
         </ul>
       </nav>
