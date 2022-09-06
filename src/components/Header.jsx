@@ -53,6 +53,8 @@ function Header() {
           <picture /*className="inline-block bg-blue-900"*/>
             <LazyLoadImage
               /*className="mix-blend-multiply grayscale"*/
+              width={"100%"}
+              height={'100%'}
               className="rounded-full"
               placeholderSrc={content.header.placeholder}
               src={content.header.img}
