@@ -1,6 +1,6 @@
 import SDL from "../img/SDL.webp";
 import Me from "../img/headerimg.webp" /*"../img/Me2.png";*/
-import placeholder from "../img/placeholder.png" /*"../img/Me2.png";*/
+import placeholder from "../img/placeholder.webp" /*"../img/Me2.png";*/
 import Me2 from  "../img/contactmeimg.webp"
 
 export const content = {
