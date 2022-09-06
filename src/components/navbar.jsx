@@ -9,8 +9,8 @@ function Navbar() {
       <a href="/" className="hidden md:block">
         <img
           className="max-h-8"
-          width={"100%"}
-          height={"100%"}
+          width={531}
+          height={82}
           src={content.nav.logo}
           alt=""
         />
