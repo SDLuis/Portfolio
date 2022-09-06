@@ -24,24 +24,18 @@ function Navbar() {
             </a>
           </li>
           <li className="relative flex lg:flex-col">
-          <ScrollLink to="tecnologies" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
-            <button>
+          <ScrollLink to="tecnologies" smooth={true} spy={true} href={'#'} className="relative hover:border-b-black hover:text-red cursor-pointer">
               Tecnologies
-              </button>
           </ScrollLink>
           </li>
           <li className="relative flex lg:flex-col">
-          <ScrollLink to="projects" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
-            <button>
+          <ScrollLink to="projects" smooth={true} spy={true}  href={'#'} className="relative hover:border-b-black hover:text-red cursor-pointer">
               Projects
-              </button>
           </ScrollLink>
           </li>
           <li className="relative flex lg:flex-col lg:mr-52">
-          <ScrollLink to="contactMe" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
-            <button>
+          <ScrollLink to="contactMe" smooth={true} spy={true}  href={'#'} className="relative hover:border-b-black hover:text-red cursor-pointer">
               Contact me
-              </button>
           </ScrollLink>
           </li>
         </ul>

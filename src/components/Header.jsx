@@ -38,7 +38,7 @@ function Header() {
             />
           </h1>
           <div className="lg:hidden block">
-            <ScrollLink to="tecnologies" smooth={true} spy={true}>
+            <ScrollLink to="tecnologies" href="#" smooth={true} spy={true}>
               <button
                 className={`${
                   animated ? "" : "translate-y-10 opacity-0"
@@ -74,7 +74,7 @@ function Header() {
           <p className="max-w-lg text-gray-400 mb-4">{content.nav.desc[0]}</p>
           <p className="max-w-lg text-gray-400">{content.nav.desc[1]}</p>
 
-          <ScrollLink to="tecnologies" smooth={true} spy={true}>
+          <ScrollLink to="tecnologies" href="#" smooth={true} spy={true}>
             <button
               className={`${
                 animated ? "" : "translate-y-10 opacity-0"
