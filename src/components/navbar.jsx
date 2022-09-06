@@ -31,16 +31,16 @@ function Navbar() {
           </ScrollLink>
           </li>
           <li className="relative flex lg:flex-col">
-          <ScrollLink to="aboutMe" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
+          <ScrollLink to="projects" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
             <button>
-              About me
+              Projects
               </button>
           </ScrollLink>
           </li>
           <li className="relative flex lg:flex-col lg:mr-52">
-          <ScrollLink to="projects" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
+          <ScrollLink to="contactMe" smooth={true} spy={true} className="relative hover:border-b-black hover:text-red">
             <button>
-              Projects
+              Contact me
               </button>
           </ScrollLink>
           </li>

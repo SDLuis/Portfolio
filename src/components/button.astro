@@ -1,0 +1,52 @@
+---
+import Github from "./logos/minigithub.astro";
+import Linkedin from "./logos/linkedin.astro";
+import Gmail from "./logos/gmail.astro";
+
+const { id, href, text, flavour = "default", openInNewWindow } = Astro.props;
+const rel = openInNewWindow ? "noopener nofollow" : null;
+const target = openInNewWindow ? "_blank" : null;
+const colors = {
+  default: "text-gray-900 bg-white border-gray-900 hover:bg-gray-200 hover:text-gray-900",
+  gmail: "text-gray-900 bg-red-400 border-gray-900 hover:bg-red-600",
+  linkendin: "text-white bg-[#00acee] border-black/60 hover:bg-[#0685c5] hover:text-gray-50",
+};
+const classesForButton = colors[flavour] ?? colors.default;
+---
+
+<div class="relative flex min-w-[16rem] md:min-w-fit">
+  <div
+    class="w-full h-full bg-gray-900 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0"
+  >
+  </div>
+  <a
+    id={id}
+    class={`relative inline-flex  justify-center w-full gap-x-2 items-center px-5 py-2 text-lg font-bold text-center no-underline whitespace-no-wrap align-middle transition-colors border-2 border-solid rounded-md shadow-xs cursor-pointer select-none hover:shadow-xs focus:shadow-xs ${classesForButton}`}
+    href={href}
+    rel={rel}
+    target={target}
+  >
+    {
+      flavour === "github" && (
+        <>
+          <Github />
+        </>
+      )
+    }
+    {
+      flavour === "linkendin" && (
+        <>
+          <Linkedin />
+        </>
+      )
+    }
+    {
+      flavour === "gmail" && (
+        <>
+          <Gmail />
+        </>
+      )
+    }
+    {text}
+  </a>
+</div>
