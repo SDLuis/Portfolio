@@ -2,8 +2,9 @@
 import Github from "./logos/minigithub.astro";
 import Linkedin from "./logos/linkedin.astro";
 import Gmail from "./logos/gmail.astro";
+import Download from "./icons/download.astro";
 
-const { id, href, text, flavour = "default", openInNewWindow } = Astro.props;
+const { id, href, text, flavour = "default", openInNewWindow, download } = Astro.props;
 const rel = openInNewWindow ? "noopener nofollow" : null;
 const target = openInNewWindow ? "_blank" : null;
 const colors = {
@@ -26,6 +27,7 @@ const classesForButton = colors[flavour] ?? colors.default;
     href={href}
     rel={rel}
     target={target}
+    download={download}
   >
     {
       flavour === "github" && (
@@ -45,6 +47,13 @@ const classesForButton = colors[flavour] ?? colors.default;
       flavour === "gmail" && (
         <>
           <Gmail />
+        </>
+      )
+    }
+     {
+      flavour === "CV" && (
+        <>
+          <Download />
         </>
       )
     }
