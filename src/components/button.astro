@@ -7,7 +7,8 @@ const { id, href, text, flavour = "default", openInNewWindow } = Astro.props;
 const rel = openInNewWindow ? "noopener nofollow" : null;
 const target = openInNewWindow ? "_blank" : null;
 const colors = {
-  default: "text-gray-900 bg-white border-gray-900 hover:bg-gray-200 hover:text-gray-900",
+  default:
+    "text-gray-900 bg-white border-gray-900 hover:bg-gray-200 hover:text-gray-900",
   gmail: "text-gray-900 bg-red-400 border-gray-900 hover:bg-red-600",
   linkendin: "text-gray-900 bg-[#00acee] border-black/60 hover:bg-[#0685c5]",
 };

@@ -1,37 +1,56 @@
 ---
 import { content } from "@content/index";
-import { techs } from "@components/icons/techIcon.astro"
+import { techs } from "@components/icons/techIcon.astro";
 ---
+
 <section>
-	<div
-		class='flex flex-col items-center lg:items-start justify-center px-10 mx-auto lg:space-y-20 lg:flex-row max-w-7xl min-h-screen' id="tecnologies">
-		<div
-			class='flex flex-col flex-shrink-0 w-full h-full max-w-lg space-y-5 text-gray-800 lg:pr-4 lg:max-w-none lg:w-5/12 xl:w-6/12'>
-			<span class='block tracking-widest text-gray-800 uppercase pt-28 text-xl'>#technologies
-			</span>
+  <div
+    class="flex flex-col items-center lg:items-start justify-center px-10 mx-auto lg:space-y-20 lg:flex-row max-w-7xl min-h-screen"
+    id="tecnologies"
+  >
+    <div
+      class="flex flex-col flex-shrink-0 w-full h-full max-w-lg space-y-5 text-gray-800 lg:pr-4 lg:max-w-none lg:w-5/12 xl:w-6/12"
+    >
+      <span class="block tracking-widest text-gray-800 uppercase pt-28 text-xl"
+        >#technologies
+      </span>
 
-			<h2 class='text-4xl font-black xl:text-5xl text-justify'>
-				Some <span class='text-transparent bg-clip-text bg-blue-800'>technologies
-				</span> that I know and use today.
-			</h2>
-			<p class='text-xl text-gray-500 mt-4'>
-				{content.stack.desc}
-			</p>
-		</div>
+      <h2 class="text-3xl font-black xl:text-5xl text-justify">
+        Some <span class="text-transparent bg-clip-text bg-blue-800"
+          >technologies
+        </span> that I know and use today.
+      </h2>
+      <p class="text-xl text-gray-500 mt-4">
+        {content.stack.desc[0]}
+      </p>
+      <p class="text-xl text-gray-500">
+        {content.stack.desc[1]}
+      </p>
+    </div>
 
-		<div
-			class=' max-w-3xl pt-10 lg:max-w-none lg:w-7/12 lg:pl-8 xl:w-6/12 grid items-center md:justify-center -mt-5 mb-12'>
-			<div class='grid grid-cols-3 lg:grid-cols-4 mb-10 text-gray-400 gap-x-12 gap-y-16 [&>a]:transition-opacity'>
-				{techs.map(({ Icon, tech }, index) => {
-				return (
-				<button class={`${ index % 2 ===0? ' animate-float'
-					: ' animate-refloat' } grid place-items-center w-20 inset-0 bg-cover bg-center `}>
-					<Icon />
-					<span class="opacity-0 hover:opacity-100 hover:-mt-7 duration-300 absolute inset-0 z-10 flex justify-center items-start text-xl text-black font-semibold">{tech}</span>
-				</button>
-				);
-				})}
-			</div>
-		</div>
-	</div>
+    <div
+      class="max-w-3xl pt-10 lg:max-w-none lg:w-7/12 lg:pl-8 xl:w-6/12 grid items-center md:justify-center -mt-5 mb-12"
+    >
+      <div
+        class="grid grid-cols-3 lg:grid-cols-4 mb-10 text-gray-400 gap-x-12 gap-y-16 [&>a]:transition-opacity"
+      >
+        {
+          techs.map(({ Icon, tech }, index) => {
+            return (
+              <button
+                class={`${
+                  index % 2 === 0 ? " animate-float" : " animate-refloat"
+                } grid place-items-center w-20 inset-0 bg-cover bg-center `}
+              >
+                <Icon />
+                <span class="opacity-0 hover:opacity-100 hover:-mt-7 duration-300 absolute inset-0 z-10 flex justify-center items-start text-xl text-black font-semibold">
+                  {tech}
+                </span>
+              </button>
+            );
+          })
+        }
+      </div>
+    </div>
+  </div>
 </section>

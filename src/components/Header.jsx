@@ -1,10 +1,9 @@
 import { useState, useEffect } from "react";
 import { content } from "@content/index";
 import Typical from "react-typical";
-import { LazyLoadImage, trackWindowScroll } from "react-lazy-load-image-component";
+import { trackWindowScroll } from "react-lazy-load-image-component";
 import { Link as ScrollLink } from "react-scroll";
-//const { LazyLoadImage } = lazyload
-import "react-lazy-load-image-component/src/effects/blur.css";
+import LazyLoadImageComponent from "./LazyLoadImage";
 
 function Header() {
   const [animated, setAnimated] = useState(false);
@@ -51,11 +50,11 @@ function Header() {
         </div>
         <div className="w-11/12 md:w-2/4 sm:w-2/4 lg:w-2/4 xl:w-1/5">
           <picture /*className="inline-block bg-blue-900"*/>
-            <LazyLoadImage
+            <LazyLoadImageComponent
               /*className="mix-blend-multiply grayscale"*/
-              width={"100%"}
-              height={'100%'}
-              className="rounded-full"
+              width={"400"}
+              height={"400"}
+              classStyle="rounded-full"
               placeholderSrc={content.header.placeholder}
               src={content.header.img}
               effect="blur"
@@ -91,4 +90,4 @@ function Header() {
   );
 }
 
-export default trackWindowScroll(Header)
+export default trackWindowScroll(Header);

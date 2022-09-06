@@ -1,6 +1,7 @@
 export const IconMenu = () => {
   return [
     <svg
+      key={1}
       xmlns="http://www.w3.org/2000/svg"
       className="w-6 h-6 first"
       fill="none"
@@ -15,6 +16,7 @@ export const IconMenu = () => {
       ></path>
     </svg>,
     <svg
+      key={2}
       xmlns="http://www.w3.org/2000/svg"
       className="hidden w-6 h-6 last"
       fill="none"

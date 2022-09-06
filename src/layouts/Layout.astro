@@ -1,7 +1,7 @@
 ---
 export interface Props {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 }
 
 const { title, description } = Astro.props as Props;
@@ -9,30 +9,28 @@ const { title, description } = Astro.props as Props;
 
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/x-icon" href="/portfolio.png" />
+    <title>{title}</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-	<meta name='description' content={description} />
-	<link rel="icon" type="image/x-icon" href="/portfolio.png" />
-	<title>{title}</title>
-</head>
+  <body>
+    <slot />
+    <style>
+      html {
+        font-family: system-ui, sans-serif;
+      }
 
-<body>
-	<slot />
-</body>
-
-</html>
-<style>
-	html {
-		font-family: system-ui, sans-serif;
-	}
-
-	body {
-		margin: 0;
-		/*background-image: url('../img/bg.gif');
+      body {
+        margin: 0;
+        /*background-image: url('../img/bg.gif');
 		background-repeat: no-repeat;
 		background-size: cover;*/
-		background-color: #002B5B;
-	}
-</style>
+        background-color: #002b5b;
+      }
+    </style>
+  </body>
+</html>
