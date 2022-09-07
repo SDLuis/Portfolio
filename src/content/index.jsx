@@ -20,7 +20,7 @@ export const content = {
     placeholder: placeholder,
     img: Me,
     img2: Me2,
-    text: ["Hi!", "It's me, Luis Rincon.", "I am "],
+    text: ["Hi!", "It's me, Luis Rincon.", "I'm "],
     typical: [
       "web developer.",
       3000,
@@ -43,6 +43,6 @@ export const content = {
     stack: "FullStack Developer (ITLA)",
     achievements: "TDS",
     aboutme:
-      "I am an observer, analyst, active, respectful, I maintain good communication with others, committed to the achievement of the objectives that are established.",
+      "I'm an observer, analyst, active, respectful, I maintain good communication with others, committed to the achievement of the objectives that are established.",
   },
 };

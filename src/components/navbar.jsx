@@ -6,14 +6,15 @@ import { trackWindowScroll } from "react-lazy-load-image-component";
 function Navbar() {
   return (
     <header className="flex p-6 justify-between w-full lg:fixed lg:z-10 bg-darkblue">
-      <a href="/" className="hidden md:block">
+      <a href="/" className="hidden md:block pointer-events-none">
         <img
-          className="max-h-8"
+          className="max-h-8 pointer-events-auto"
           width={'207.22px'}
           height={'31.98px'}
           src={content.nav.logo}
           alt=""
         />
+        <p className="pointer-events-none fixed z-10 text-[#002b5b]">.</p>
       </a>
       <input type="checkbox" id="menu" hidden className="peer " />
       <label

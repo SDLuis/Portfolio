@@ -72,7 +72,7 @@ function Header() {
           <h1 className="text-2xl md:text-2xl text-blue-300 font-bold mb-2">
             FULL STACK WEB DEVELOPER
           </h1>
-          <p className="max-w-lg text-gray-400 mb-4">{content.nav.desc[0]}</p>
+          <p className="max-w-lg text-gray-400 text-justify mb-4">{content.nav.desc[0]}</p>
           <p className="max-w-lg text-gray-400">{content.nav.desc[1]}</p>
 
           <ScrollLink to="tecnologies" href="#" smooth={true} spy={true}>
