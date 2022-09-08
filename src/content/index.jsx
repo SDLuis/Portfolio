@@ -40,9 +40,9 @@ export const content = {
   },
   info: {
     age: "22 years old",
-    stack: "FullStack Developer (ITLA)",
-    achievements: "TDS",
+    achievements: ["Software Development ", "Technologist (ITLA)"],
     aboutme:
       "I'm an observer, analyst, active, respectful, I maintain good communication with others, committed to the achievement of the objectives that are established.",
+    country: "Dominican Republic",
   },
 };
