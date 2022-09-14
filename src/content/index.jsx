@@ -20,7 +20,7 @@ export const content = {
     placeholder: placeholder,
     img: Me,
     img2: Me2,
-    text: ["Hi!", "It's me, Luis Rincon.", "I'm a"],
+    text: ["Hi!", "It's me, Luis Rincon.", "I am"],
     typical: [
       "web developer.",
       3000,
