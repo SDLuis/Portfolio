@@ -23,7 +23,8 @@ module.exports = {
       animation: {
         "moving-background": "moving-background 5s ease-in-out",
         "float": "float 3s infinite",
-        "refloat": "refloat 3s infinite"
+        "refloat": "refloat 3s infinite",
+        "opacityAnimated": "opacityAnimated 1.8s ease-in-out"
       },
       keyframes: {
         "moving-background": {
@@ -32,11 +33,24 @@ module.exports = {
             opacity: 0,
           },
           "66%": {
-            opacity: 0.4,
+            opacity: 0.5,
           },
           "100%": {
             transform: "translateY(-150px)",
             opacity: 0,
+          },
+        },
+        "opacityAnimated": {
+          "0%": {
+            transform: "translateY(20px)",
+            opacity: 0,
+          },
+          "90%": {
+            opacity: 0.3,
+          },
+          "100%": {
+            transform: "translateY(0px)",
+            opacity: 1,
           },
         },
         float: {
