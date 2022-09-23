@@ -1,6 +1,7 @@
 ---
 import jobsposter from "../img/Jobsposter.jpg";
 import musicplayer from "../img/musicplayer.jpg";
+import dashboard from "../img/dashboard.jpg"
 ---
 
 <div
@@ -98,15 +99,15 @@ import musicplayer from "../img/musicplayer.jpg";
     </article>
     <article
       class="max-w-xs md:max-w-sm min-w-[20rem] md:min-w-[24rem] max-h-[30rem] min-h-[27rem] mt-4 rounded-xl mb-10 bg-cover bg-center transform duration-500 group"
-      style="background-image: url(https://images.pexels.com/photos/3325720/pexels-photo-3325720.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);"
-    >
+      style={`background-image: url(${dashboard});`}
+      >
       <div
         class="bg-black rounded-xl min-h-[27rem] bg-opacity-0 pointer-events-none min-h-100 px-10 text-justify flex flex-wrap flex-col pt-40 group-hover:bg-opacity-75 group-hover:pointer-events-auto transform duration-300"
       >
         <h1
-          class="text-white bg-blue-800 group-hover:bg-transparent max-w-[144px] rounded-full text-center group-hover:-ml-2 font-bold text-3xl mb-5 transform translate-y-48 md:translate-y-40 group-hover:-translate-y-20 duration-500"
+          class="text-white bg-blue-800 group-hover:bg-transparent max-w-[180px] rounded-full text-center group-hover:-ml-2 font-bold text-3xl mb-5 transform translate-y-48 md:translate-y-40 group-hover:-translate-y-20 duration-500"
         >
-          Working
+          Dashboard
         </h1>
         <div
           class="w-16 h-2 bg-blue-800 rounded-full mb-5 transform translate-y-48 md:translate-y-40 group-hover:-translate-y-20 duration-500"
@@ -115,7 +116,18 @@ import musicplayer from "../img/musicplayer.jpg";
         <p
           class="opacity-0 text-white text-xl max-h-[20rem] -top-10 group-hover:opacity-80 transform ease-in-out duration-500 group-hover:-translate-y-20"
         >
-          Working...
+          Dashboard responsive con Astro y Tailwind
+          <br/>
+          <a
+            class="text-white relative font-bold bg-blue-800 rounded-xl text-center group-hover:border-b-black"
+            target="_blank"
+            href="https://sdldashboard.netlify.app/">Go to website</a
+          >
+          <a
+          class="text-white relative font-bold bg-blue-900 rounded-xl text-center group-hover:border-b-black"
+          target="_blank"
+          href="https://github.com/SDLuis/Dashboard">Go to Code</a
+        >
         </p>
       </div>
     </article>
