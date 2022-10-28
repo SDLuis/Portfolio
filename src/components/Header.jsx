@@ -18,7 +18,7 @@ function Header() {
           <h2
             className={`${
               animated ? "" : "translate-y-5 opacity-0"
-            }  transform transition duration-2000 ease-in-out text-2xl md:text-4xl font-bold text-blue-300`}
+            }  transform transition duration-2000 ease-in-out text-2xl md:text-4xl font-bold text-blue-400`}
           >
             {content.header.text[0]}
             <br />
@@ -69,7 +69,7 @@ function Header() {
           }  transform transition duration-2000 ease-in-out ml-10 mt-5 lg:mt-0 text-left hidden lg:block`}
         >
           <p className="text-white uppercase font-bold">Introduction</p>
-          <h1 className="text-2xl md:text-2xl text-blue-300 font-bold mb-2">
+          <h1 className="text-2xl md:text-2xl text-blue-400 font-bold mb-2">
             FULL STACK WEB DEVELOPER
           </h1>
           <p className="max-w-lg text-gray-400 text-justify mb-4">{content.nav.desc[0]}</p>
