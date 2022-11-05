@@ -3,15 +3,16 @@ import { content } from "@content/index";
 import LazyLoadImage from "./LazyLoadImage";
 import Button from "./button.astro";
 import CV from "../img/LuisRincon-CV.pdf"
+import Placeholder from '../img/placeholderimgrounded.webp'
 ---
 
 <div id="contactMe" class="grid place-content-center min-h-screen bg-white">
   <span
-    class="block tracking-widest text-gray-900 uppercase md:mx-2 lg:-ml-20 mt-[6px] pt-20 text-xl"
+    class="block tracking-widest text-gray-900 uppercase md:mx-2 mt-[6px] pt-20 text-xl"
     >#Contact me
   </span>
   <div
-    class="grid xl:grid-cols-1 max-w-xs md:max-w-[43rem] lg:max-w-3xl xl:min-w-[65rem] mt-7 gap-4"
+    class="grid xl:grid-cols-1 max-w-xs md:max-w-[43rem] lg:max-w-3xl xl:min-w-[62rem] mt-7 gap-4"
   >
     <div class="flex flex-col items-center justify-center">
       <div class="atropos">
@@ -33,7 +34,7 @@ import CV from "../img/LuisRincon-CV.pdf"
                     height={}
                     classStyle="w-2/4 md:w-full xl:max-w-4xl h-auto xl:mt-[2px] mt-5 md:mt-0 rounded-full mx-auto"
                     src={content.header.img2}
-                    placeholderSrc={content.header.img2}
+                    placeholderSrc={Placeholder}
                     alt="Luis Tejeda"
                   />
                   <div
@@ -61,7 +62,7 @@ import CV from "../img/LuisRincon-CV.pdf"
                       <h1 data-atropos-offset="2" class="text-gray-400">
                         - {content.info.achievements[0]}<p class=" text-gray-400 ml-[10px] inline-block md:ml-0">{content.info.achievements[1]}</p>
                       </h1>
-                      <div class="xl:block hidden">
+                      <div class="xl:block hidden text-sm">
                         <p
                           data-atropos-offset="4"
                           class="mt-3 mb-4 lg:mt-1 lg:mb-0 font-medium text-lg text-sky-500"
@@ -74,28 +75,32 @@ import CV from "../img/LuisRincon-CV.pdf"
                             <br />
                             TypeScript
                             <br />
+                            Node js
+                            <br />
                             C#
                           </h4>
                           <h4>
-                            Node js
-                            <br />
                             Express
                             <br />
                             React js
                             <br />
-                            Sequelize
+                            Astro
+                            <br />
+                            Playwright Test
                           </h4>
                           <h4>
                             SQL
                             <br />
                             MySQL
                             <br />
-                            Oracle
+                            Sequelize
+                            <br />
+                            Tailwind CSS
                           </h4>
                           <h4>
                             Git - Github
                             <br />
-                            Metodología scrum
+                            Scrum methodology
                             <br />
                             Confluence
                             <br />

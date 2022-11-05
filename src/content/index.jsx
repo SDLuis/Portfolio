@@ -1,7 +1,12 @@
-import SDL from "../img/SDL.webp";
-import Me from "../img/headerimg.webp"; /*"../img/Me2.png";*/
-import placeholder from "../img/placeholder.webp"; /*"../img/Me2.png";*/
-import Me2 from "../img/contactmeimg.webp";
+import SDL from "../img/SDL.webp"
+import Me from "../img/headerimg.webp" /*"../img/Me2.png";*/
+import placeholder from "../img/placeholder.webp" /*"../img/Me2.png";*/
+import Me2 from "../img/contactmeimg.webp"
+import jobsposter from "../img/Jobsposter.webp"
+import musicplayer from "../img/musicplayer.webp";
+import dashboard from "../img/dashboard.webp"
+import weather from "../img/weather-app.webp"
+import ecommerce from "../img/ecommerce.webp"
 
 export const content = {
   nav: {
@@ -45,4 +50,42 @@ export const content = {
       "I'm an observer, analyst, active, respectful, I maintain good communication with others, committed to the achievement of the objectives that are established.",
     country: "Dominican Republic",
   },
+  projects: [
+    {
+      title: 'Jobs Poster',
+      description: 'Website to view and post jobs. Worked with react, and backend with Node, TypeScript, Sequelize and MySql.',
+      img: jobsposter,
+      url: 'https://jobsposter.herokuapp.com/',
+      github: 'https://github.com/SDLuis/JobsPoster'
+    },
+    {
+      title: 'Music Player',
+      description: 'Simple online music player, with music to be relaxing, Website worked with React, Astro, Tailwind, and CSS.',
+      img: musicplayer,
+      url: 'https://sdlmusicplayer.netlify.app',
+      github: 'https://github.com/SDLuis/MusicPlayer'
+    },
+    {
+      title: 'Dashboard',
+      description: 'Dashboard responsive without functions, with online course theme, inspired by figma design. Worked with Astro and Tailwind.',
+      img: dashboard,
+      url: 'https://sdldashboard.netlify.app/',
+      github: 'https://github.com/SDLuis/Dashboard'
+    },
+    {
+      title: 'Weather app',
+      description: 'Weather app, shows detailed weather by city, inspired by thearthurk design. Website worked with Astro, React and Tailwind.',
+      img: weather,
+      url: 'https://sdl-weather.netlify.app/',
+      github: 'https://github.com/SDLuis/weather-website'
+    },
+    {
+      title: 'Ecommerce',
+      description: 'Ecommerce Website worked with astro, react, and backend with Node, TypeScript, Sequelize and MySql',
+      img: ecommerce,
+      url: 'https://sdl-ecommerce.netlify.app/',
+      github: 'https://github.com/SDLuis/ecommerce-website'
+    },
+    
+]
 };
