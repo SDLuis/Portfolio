@@ -1,7 +1,8 @@
 import { content } from "@content/index";
 import { IconMenu } from "@icons/menu";
 import { Link as ScrollLink } from "react-scroll";
-import { trackWindowScroll } from "react-lazy-load-image-component";
+import TrackRoll from "react-lazy-load-image-component"
+const { trackWindowScroll } = TrackRoll
 
 function Navbar() {
   return (
