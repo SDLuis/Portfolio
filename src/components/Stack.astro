@@ -29,10 +29,10 @@ import { techs } from "@components/icons/techIcon.astro";
     </div>
 
     <div
-      class="max-w-3xl pt-10 lg:max-w-none lg:w-7/12 lg:pl-8 xl:w-6/12 grid items-center md:justify-center -mt-5 mb-12"
+      class="max-w-3xl pt-5 md:pt-10 lg:max-w-none lg:w-7/12 lg:pl-8 xl:w-6/12 grid items-center md:justify-center -mt-5 mb-12"
     >
       <div
-        class="grid grid-cols-4 mb-10 gap-x-12 gap-y-16"
+        class="grid grid-cols-3 md:grid-cols-4 mb-10 gap-x-16 gap-y-10"
       >
         {
           techs.map(({ Icon, tech }, index) => {
@@ -40,7 +40,7 @@ import { techs } from "@components/icons/techIcon.astro";
               <button
                 class={`${
                   index % 2 === 0 ? " animate-float" : " animate-refloat"
-                } grid place-items-center w-12 bg-cover bg-center `}
+                } grid place-items-center w-20`}
               >
                 <Icon />
                 <p class="t">{tech}</p>

@@ -8,8 +8,8 @@ export default function Projects({ project }) {
     <div className="w-[270px] flex-col m-8 p-4 rounded-lg cursor-pointer transition-all duration-300 ease-in hover:shadow-xl shadow-[#00000033] text-black bg-gray-100 flex justify-center items-center">
       <div className="app__work-img w-full h-[230px] relative justify-center items-center">
         <LazyLoadImageComponent
-          width={"270"}
-          height={"270"}
+          width={'100%'}
+          height={'100%'}
           effect="blur"
           classStyle="w-full h-full rounded-lg object-cover"
           src={project.img}

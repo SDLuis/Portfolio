@@ -1,9 +1,9 @@
-import { useState } from "react";
-import { content } from "@content/index";
-import Typical from "react-typical";
-import TrackRoll from "react-lazy-load-image-component";
-import { Link as ScrollLink } from "react-scroll";
-import LazyLoadImageComponent from "./LazyLoadImage";
+import { useState } from "react"
+import { content } from "@content/index"
+import Typical from "react-typical"
+import TrackRoll from "react-lazy-load-image-component"
+import { Link as ScrollLink } from "react-scroll"
+import LazyLoadImageComponent from "./LazyLoadImage"
 const { trackWindowScroll } = TrackRoll
 
 function Header() {

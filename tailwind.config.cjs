@@ -59,7 +59,7 @@ module.exports = {
             animationTimingFunction: "ease-in-out",
           },
           "50%": {
-            transform: "translateY(-20px)",
+            transform: "translateY(-10px)",
             animationTimingFunction: "ease-in-out",
           },
           "100%": {
@@ -69,7 +69,7 @@ module.exports = {
       },
       refloat: {
         "0%": {
-          transform: "translateY(-20px)",
+          transform: "translateY(-10px)",
           animationTimingFunction: "ease-in-out",
         },
         "50%": {
@@ -77,7 +77,7 @@ module.exports = {
           animationTimingFunction: "ease-in-out",
         },
         "100%": {
-          transform: "translateY(-20px)",
+          transform: "translateY(-10px)",
           animationTimingFunction: "ease-in-out",
         }
       },
