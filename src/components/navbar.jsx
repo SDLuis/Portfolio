@@ -15,7 +15,7 @@ function Navbar() {
           src={content.nav.logo}
           alt=""
         />
-        <p className="pointer-events-none fixed z-10 text-[#002b5b]">.</p>
+        <p className="pointer-events-none fixed z-10 text-transparent">.</p>
       </a>
       <input type="checkbox" id="menu" hidden className="peer " />
       <label
