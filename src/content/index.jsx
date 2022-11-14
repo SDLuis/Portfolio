@@ -7,6 +7,7 @@ import musicplayer from "../img/musicplayer.webp";
 import dashboard from "../img/dashboard.webp"
 import weather from "../img/weather-app.webp"
 import ecommerce from "../img/ecommerce.webp"
+import soundpulse from "../img/soundpulse.jpg"
 
 export const content = {
   nav: {
@@ -85,6 +86,13 @@ export const content = {
       img: ecommerce,
       url: 'https://sdl-ecommerce.netlify.app/',
       github: 'https://github.com/SDLuis/ecommerce-website'
+    },
+    {
+      title: 'Sound Pulse',
+      description: 'Beautiful website maked to feel the music. Website worked with astro, react, and personalized images by a friend',
+      img: soundpulse,
+      url: 'https://soundpulse.netlify.app',
+      github: 'https://github.com/SDLuis/SoundPulse'
     },
     
 ]
