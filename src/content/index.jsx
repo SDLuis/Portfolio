@@ -82,14 +82,14 @@ export const content = {
     },
     {
       title: 'Ecommerce',
-      description: 'Ecommerce Website worked with astro, react, and backend with Node, TypeScript, Sequelize and MySql',
+      description: 'Ecommerce Website worked with astro, react, and backend with Node, TypeScript, Sequelize and MySql.',
       img: ecommerce,
       url: 'https://sdl-ecommerce.netlify.app/',
       github: 'https://github.com/SDLuis/ecommerce-website'
     },
     {
       title: 'Sound Pulse',
-      description: 'Beautiful website maked to feel the music. Website worked with astro, react, and personalized images by a friend',
+      description: 'Beautiful website maked to feel the music. Website worked with astro, react, and personalized images by a friend.',
       img: soundpulse,
       url: 'https://soundpulse.netlify.app',
       github: 'https://github.com/SDLuis/SoundPulse'
