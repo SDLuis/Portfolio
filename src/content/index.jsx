@@ -8,6 +8,7 @@ import dashboard from "../img/dashboard.webp"
 import weather from "../img/weather-app.webp"
 import ecommerce from "../img/ecommerce.webp"
 import soundpulse from "../img/soundpulse.jpg"
+import gericht from "../img/gericht.jpg"
 
 export const content = {
   nav: {
@@ -94,6 +95,12 @@ export const content = {
       url: 'https://soundpulse.netlify.app',
       github: 'https://github.com/SDLuis/SoundPulse'
     },
-    
+    {
+      title: 'Gericht Restaurant',
+      description: 'Beautiful and responsive restaurant Landing page. Website worked with astro, react, and Tailwind. Inspired in Iqonic design posted on Figma.',
+      img: gericht,
+      url: 'https://sdl-gericht.netlify.app',
+      github: 'https://github.com/SDLuis/Restaurant-Website'
+    }
 ]
 };
