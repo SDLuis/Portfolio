@@ -9,6 +9,7 @@ import weather from "../img/weather-app.webp"
 import ecommerce from "../img/ecommerce.webp"
 import soundpulse from "../img/soundpulse.jpg"
 import gericht from "../img/gericht.jpg"
+import windows95 from "../img/windows95.webp"
 
 export const content = {
   nav: {
@@ -101,6 +102,13 @@ export const content = {
       img: gericht,
       url: 'https://sdl-gericht.netlify.app',
       github: 'https://github.com/SDLuis/Restaurant-Website'
+    },
+    {
+      title: 'Windows 95',
+      description: 'Website inspired in windows 95, with info about me and my projects. Make with react, react95 and styled components.',
+      img: windows95,
+      url: 'https://sdl-windows95.netlify.app',
+      github: 'https://github.com/SDLuis/Windows95'
     }
 ]
 };
