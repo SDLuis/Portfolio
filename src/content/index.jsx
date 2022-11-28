@@ -10,6 +10,7 @@ import ecommerce from "../img/ecommerce.webp"
 import soundpulse from "../img/soundpulse.jpg"
 import gericht from "../img/gericht.jpg"
 import windows95 from "../img/windows95.webp"
+import metaversus from "../img/metaversus.jpg"
 
 export const content = {
   nav: {
@@ -84,31 +85,38 @@ export const content = {
     },
     {
       title: 'Ecommerce',
-      description: 'Ecommerce Website worked with astro, react, and backend with Node, TypeScript, Sequelize and MySql.',
+      description: 'Ecommerce Website worked with Astro, React, and backend with Node, TypeScript, Sequelize and MySql.',
       img: ecommerce,
       url: 'https://sdl-ecommerce.netlify.app/',
       github: 'https://github.com/SDLuis/ecommerce-website'
     },
     {
       title: 'Sound Pulse',
-      description: 'Beautiful website maked to feel the music. Website worked with astro, react, and personalized images by a friend.',
+      description: 'Beautiful website maked to feel the music. Website worked with Astro, React, and personalized images by a friend.',
       img: soundpulse,
       url: 'https://soundpulse.netlify.app',
       github: 'https://github.com/SDLuis/SoundPulse'
     },
     {
       title: 'Gericht Restaurant',
-      description: 'Beautiful and responsive restaurant Landing page. Website worked with astro, react, and Tailwind. Inspired in Iqonic design posted on Figma.',
+      description: 'Beautiful and responsive restaurant Landing page. Website worked with Astro, React, and Tailwind. Inspired in Iqonic design posted on Figma.',
       img: gericht,
       url: 'https://sdl-gericht.netlify.app',
       github: 'https://github.com/SDLuis/Restaurant-Website'
     },
     {
       title: 'Windows 95',
-      description: 'Website inspired in windows 95, with info about me and my projects. Make with react, react95 and styled components.',
+      description: 'Website inspired in Windows 95, with info about me and my projects. Make with React, React95 and Styled Components.',
       img: windows95,
       url: 'https://sdl-windows95.netlify.app',
       github: 'https://github.com/SDLuis/Windows95'
+    },
+    {
+      title: 'Metaversus',
+      description: 'Website inspired on figma design, All the resources are in the figma file. Make with Next, Framer Motion and Tailwind.',
+      img: metaversus,
+      url: 'https://sdl-metaversus.netlify.app',
+      github: 'https://github.com/SDLuis/metaversus'
     }
 ]
 };
