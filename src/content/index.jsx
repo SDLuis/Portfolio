@@ -59,7 +59,7 @@ export const content = {
       title: 'Jobs Poster',
       description: 'Website to view and post jobs. Worked with react, and backend with Node, TypeScript, Sequelize and MySql.',
       img: jobsposter,
-      url: 'https://jobsposter.herokuapp.com/',
+      url: 'https://jobs-poster.vercel.app/',
       github: 'https://github.com/SDLuis/JobsPoster'
     },
     {
