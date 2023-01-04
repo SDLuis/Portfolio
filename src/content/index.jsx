@@ -8,7 +8,7 @@ import dashboard from "../img/dashboard.webp"
 import weather from "../img/weather-app.webp"
 import ecommerce from "../img/ecommerce.webp"
 import soundpulse from "../img/soundpulse.jpg"
-import gericht from "../img/gericht.jpg"
+import ourspace from "../img/ourspace.jpg"
 import windows95 from "../img/windows95.webp"
 import metaversus from "../img/metaversus.jpg"
 
@@ -98,13 +98,6 @@ export const content = {
       github: 'https://github.com/SDLuis/SoundPulse'
     },
     {
-      title: 'Gericht Restaurant',
-      description: 'Beautiful and responsive restaurant Landing page. Website worked with Astro, React, and Tailwind. Inspired in Iqonic design posted on Figma.',
-      img: gericht,
-      url: 'https://sdl-gericht.netlify.app',
-      github: 'https://github.com/SDLuis/Restaurant-Website'
-    },
-    {
       title: 'Windows 95',
       description: 'Website inspired in Windows 95, with info about me and my projects. Make with React, React95 and Styled Components.',
       img: windows95,
@@ -117,6 +110,13 @@ export const content = {
       img: metaversus,
       url: 'https://sdl-metaversus.netlify.app',
       github: 'https://github.com/SDLuis/metaversus'
+    },
+    {
+      title: 'Ourspace',
+      description: 'Social media design inspired on Twitter. Website worked with Next, and Tailwind. Api working with Node and express. Still coding...',
+      img: ourspace,
+      url: 'https://ourspace-website.vercel.app',
+      github: 'https://github.com/SDLuis/ourspace-website'
     }
 ]
 };
