@@ -7,27 +7,39 @@ import Projects from "./project";
   class="min-h-screen grid place-content-center md:place-items-start"
   id="projects"
 >
-<div class="grid place-content-center min-h-screen max-w-[950px]">
-  <span
-    class="block tracking-widest text-gray-200 uppercase md:mx-6 mx-8 pt-20 text-xl"
-  >
-    #projects
-  </span>
-  <h2
-    class="md:mx-6 mx-8 text-4xl text-blue-300 font-extrabold xl:text-5xl text-justify mb-10 mt-5"
-  >
-    Some <span class="text-transparent bg-clip-text bg-blue-800">projects</span>
-    i have done to date
-  </h2>
+  <div class="grid place-content-center min-h-screen max-w-[950px]">
+    <span
+      class="block tracking-widest text-gray-200 uppercase md:mx-6 mx-8 pt-20 text-xl"
+    >
+      #projects
+    </span>
+    <h2
+      class="md:mx-6 mx-8 text-4xl text-blue-300 font-extrabold xl:text-5xl text-justify mb-10 mt-5"
+    >
+      Some <span class="text-transparent bg-clip-text bg-blue-800"
+        >projects</span
+      >
+      i have done to date
+    </h2>
 
-  <div
-    class="grid place-items-center grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 mb-10 mx-auto gap-x-10"
-  >
-    {
-      content.projects.map((project) => {
-       return <Projects project={project} client:visible />
-      })
-    }
+    <div
+      class="grid place-items-center grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 mb-10 mx-auto gap-x-10"
+    >
+      {
+        content.projects.map((project) => {
+          return <Projects project={project} client:visible />;
+        })
+      }
+      <div></div>
+      <div></div>
+      <a
+      class="flex justify-end lg:w-[90%]"
+      target="_blank" rel="noreferrer"
+      href="https://github.com/SDLuis?tab=repositories"
+        ><p class="text-lg border-b border-solid border-gray-200 text-gray-200">
+          See more projects
+        </p>
+      </a>
+    </div>
   </div>
-</div>
 </div>
