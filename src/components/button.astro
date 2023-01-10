@@ -9,16 +9,16 @@ const rel = openInNewWindow ? "noopener nofollow" : null;
 const target = openInNewWindow ? "_blank" : null;
 const colors = {
   default:
-    "text-gray-900 bg-white border-gray-900 hover:bg-gray-200 hover:text-gray-900",
-  gmail: "text-gray-900 bg-red-400 border-gray-900 hover:bg-red-600",
-  linkendin: "text-gray-900 bg-[#00acee] border-black/60 hover:bg-[#0685c5]",
+    "text-black bg-white border-black hover:bg-gray-200 hover:text-gray-900",
+  gmail: "text-black bg-red-400 border-black hover:bg-red-600",
+  linkendin: "text-black bg-[#00acee] border-black hover:bg-[#0685c5]",
 };
 const classesForButton = colors[flavour] ?? colors.default;
 ---
 
 <div class="relative flex min-w-[16rem] md:min-w-fit">
   <div
-    class="w-full h-full bg-gray-900 ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0"
+    class="w-full h-full bg-black ml-0.5 mt-0.5 rounded-lg absolute left-0 top-0"
   >
   </div>
   <a
