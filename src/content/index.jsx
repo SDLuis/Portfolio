@@ -56,6 +56,48 @@ export const content = {
   },
   projects: [
     {
+      title: 'Ourspace',
+      description: 'Social media design inspired on Twitter. Website worked with Next, and Tailwind. Api working with Node and express. Still coding...',
+      img: ourspace,
+      url: 'https://ourspace-website.vercel.app',
+      github: 'https://github.com/SDLuis/ourspace-website'
+    },
+    {
+      title: 'Weather app',
+      description: 'Weather app, shows detailed weather by city, inspired by thearthurk design. Website worked with Astro, React and Tailwind.',
+      img: weather,
+      url: 'https://sdl-weather.netlify.app/',
+      github: 'https://github.com/SDLuis/weather-website'
+    },
+    {
+      title: 'Sound Pulse',
+      description: 'Beautiful website maked to feel the music. Website worked with Astro, React, and personalized images by a friend.',
+      img: soundpulse,
+      url: 'https://soundpulse.netlify.app',
+      github: 'https://github.com/SDLuis/SoundPulse'
+    },
+    {
+      title: 'Ecommerce',
+      description: 'Ecommerce Website worked with Astro, React, and backend with Node, TypeScript, Sequelize and MySql.',
+      img: ecommerce,
+      url: 'https://sdl-ecommerce.netlify.app/',
+      github: 'https://github.com/SDLuis/ecommerce-website'
+    },
+    {
+      title: 'Windows 95',
+      description: 'Website inspired in Windows 95, with info about me and my projects. Make with React, React95 and Styled Components.',
+      img: windows95,
+      url: 'https://sdl-windows95.netlify.app',
+      github: 'https://github.com/SDLuis/Windows95'
+    },
+    {
+      title: 'Metaversus',
+      description: 'Website inspired on figma design, All the resources are in the figma file. Make with Next, Framer Motion and Tailwind.',
+      img: metaversus,
+      url: 'https://sdl-metaversus.netlify.app',
+      github: 'https://github.com/SDLuis/metaversus'
+    },
+    {
       title: 'Jobs Poster',
       description: 'Website to view and post jobs. Worked with react, and backend with Node, TypeScript, Sequelize and MySql.',
       img: jobsposter,
@@ -75,48 +117,6 @@ export const content = {
       img: dashboard,
       url: 'https://sdldashboard.netlify.app/',
       github: 'https://github.com/SDLuis/Dashboard'
-    },
-    {
-      title: 'Weather app',
-      description: 'Weather app, shows detailed weather by city, inspired by thearthurk design. Website worked with Astro, React and Tailwind.',
-      img: weather,
-      url: 'https://sdl-weather.netlify.app/',
-      github: 'https://github.com/SDLuis/weather-website'
-    },
-    {
-      title: 'Ecommerce',
-      description: 'Ecommerce Website worked with Astro, React, and backend with Node, TypeScript, Sequelize and MySql.',
-      img: ecommerce,
-      url: 'https://sdl-ecommerce.netlify.app/',
-      github: 'https://github.com/SDLuis/ecommerce-website'
-    },
-    {
-      title: 'Sound Pulse',
-      description: 'Beautiful website maked to feel the music. Website worked with Astro, React, and personalized images by a friend.',
-      img: soundpulse,
-      url: 'https://soundpulse.netlify.app',
-      github: 'https://github.com/SDLuis/SoundPulse'
-    },
-    {
-      title: 'Windows 95',
-      description: 'Website inspired in Windows 95, with info about me and my projects. Make with React, React95 and Styled Components.',
-      img: windows95,
-      url: 'https://sdl-windows95.netlify.app',
-      github: 'https://github.com/SDLuis/Windows95'
-    },
-    {
-      title: 'Metaversus',
-      description: 'Website inspired on figma design, All the resources are in the figma file. Make with Next, Framer Motion and Tailwind.',
-      img: metaversus,
-      url: 'https://sdl-metaversus.netlify.app',
-      github: 'https://github.com/SDLuis/metaversus'
-    },
-    {
-      title: 'Ourspace',
-      description: 'Social media design inspired on Twitter. Website worked with Next, and Tailwind. Api working with Node and express. Still coding...',
-      img: ourspace,
-      url: 'https://ourspace-website.vercel.app',
-      github: 'https://github.com/SDLuis/ourspace-website'
     }
 ]
 };
