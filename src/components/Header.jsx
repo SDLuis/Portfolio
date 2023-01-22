@@ -22,7 +22,7 @@ function Header() {
           <h2
             className={`${
               animated ? "" : "translate-y-5 opacity-0"
-            }  transform transition duration-2000 ease-in-out text-2xl md:text-4xl font-bold text-blue-400`}
+            }  transform transition duration-[1600] ease-in-out text-2xl md:text-4xl font-bold text-blue-400`}
           >
             {content.header.text[0]}
             <br />
@@ -31,7 +31,7 @@ function Header() {
           <h1
             className={`${
               animated ? "" : "translate-y-5 opacity-0"
-            }  transform transition duration-2000 ease-in-out font-bold text-xl sm:text-2xl`}
+            }  transform transition duration-[1600] ease-in-out font-bold text-xl sm:text-2xl`}
           >
             {content.header.text[2]}{" "}
             <Typical
@@ -45,7 +45,7 @@ function Header() {
               <button
                 className={`${
                   animated ? "" : "translate-y-10 opacity-0"
-                }  transform transition duration-2000 ease-in-out animate-float mt-10 rounded-lg bg-blue-800 py-3 px-9 text-xl uppercase text-gray-200 hover:bg-blue-600`}
+                }  transform transition duration-[1600] ease-in-out animate-float mt-10 rounded-lg bg-blue-800 py-3 px-9 text-xl uppercase text-gray-200 hover:bg-blue-600`}
               >
                 {content.header.btnText}
               </button>
@@ -59,7 +59,6 @@ function Header() {
               width={"400"}
               height={"400"}
               classStyle="rounded-full"
-              placeholderSrc={content.header.placeholder}
               src={content.header.img}
               effect="blur"
               alt="Luis Rincon"
@@ -70,7 +69,7 @@ function Header() {
         <div
           className={`${
             animated ? "" : "translate-y-5 opacity-0"
-          }  transform transition duration-2000 ease-in-out ml-10 mt-5 lg:mt-0 text-left hidden lg:block`}
+          }  transform transition duration-[1600] ease-in-out ml-10 mt-5 lg:mt-0 text-left hidden lg:block`}
         >
           <p className="text-white uppercase font-bold">Introduction</p>
           <h1 className="text-2xl md:text-2xl text-blue-400 font-bold mb-2">
@@ -83,7 +82,7 @@ function Header() {
             <button
               className={`${
                 animated ? "" : "translate-y-10 opacity-0"
-              }  transform transition duration-2000 ease-in-out animate-float bg-blue-800 py-3 px-9 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
+              }  transform transition duration-[1600] ease-in-out animate-float bg-blue-800 py-3 px-9 text-xl uppercase mt-10 rounded-lg text-gray-200 hover:bg-blue-600`}
             >
               {content.header.btnText}
             </button>
