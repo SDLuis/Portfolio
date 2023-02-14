@@ -4,7 +4,7 @@ import placeholder from "../img/placeholder.webp" /*"../img/Me2.png";*/
 import Me2 from "../img/contactmeimg.webp"
 import jobsposter from "../img/Jobsposter.webp"
 import musicplayer from "../img/musicplayer.webp";
-import dashboard from "../img/dashboard.webp"
+import retroblog from "../img/retroblog.webp"
 import weather from "../img/weather-app.webp"
 import ecommerce from "../img/ecommerce.webp"
 import soundpulse from "../img/soundpulse.jpg"
@@ -70,6 +70,13 @@ export const content = {
       github: 'https://github.com/SDLuis/weather-website'
     },
     {
+      title: 'Retro Blog',
+      description: 'Retro blog inspired on behance design, with some interesting articles, Worked with Astro and Tailwind.',
+      img: retroblog,
+      url: 'https://sdl-retroblog.netlify.app',
+      github: 'https://github.com/SDLuis/Retro-blog'
+    },
+    {
       title: 'Sound Pulse',
       description: 'Beautiful website maked to feel the music. Website worked with Astro, React, and personalized images by a friend.',
       img: soundpulse,
@@ -110,13 +117,6 @@ export const content = {
       img: musicplayer,
       url: 'https://sdlmusicplayer.netlify.app',
       github: 'https://github.com/SDLuis/MusicPlayer'
-    },
-    {
-      title: 'Dashboard',
-      description: 'Dashboard responsive without functions, with online course theme, inspired by figma design. Worked with Astro and Tailwind.',
-      img: dashboard,
-      url: 'https://sdldashboard.netlify.app/',
-      github: 'https://github.com/SDLuis/Dashboard'
     }
 ]
 };
